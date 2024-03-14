@@ -189,6 +189,7 @@ p {
     transform: scale(1.05);
 }
 
+
 #serve {
     height: auto;
     display: flex;
@@ -216,6 +217,9 @@ p {
 
 .img {
     border-radius: 10px;
+}
+.img2:hover {
+    box-shadow: 0px 0px 50px rgba(78, 81, 84, 0.512);
 }
 
 .links {
@@ -343,6 +347,7 @@ td, th {
     text-align: center;
     font-size: 1.5rem;
 }
+
 .button {
     border: 0;
     line-height: 2.5;
@@ -369,6 +374,7 @@ td, th {
     background-color: rgba(255, 0, 0, 1);
     transform: scale(1.05);
 }
+
 .button:active {
     box-shadow:
     inset -2px -2px 3px rgba(255, 255, 255, 0.6),
@@ -378,6 +384,7 @@ td, th {
 .col33 {
     width: 500px;
 }
+
 #pera {
     padding:0rem 1.5rem 0rem 1.5rem ;
     display: inline;
