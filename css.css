@@ -10,9 +10,6 @@ a {
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
-a:hover {
-
-}
 
 .img {
     width: 50%;
@@ -389,3 +386,20 @@ td, th {
     padding:0rem 1.5rem 0rem 1.5rem ;
     display: inline;
 }
+
+.main { 
+    text-align: center; 
+} 
+
+.marq { 
+    padding-top: 30px; 
+    padding-bottom: 30px; 
+    background-color:  #485dcfb6;
+} 
+
+.geek1 { 
+    font-size: 36px; 
+    font-weight: bold; 
+    color: white; 
+    padding-bottom: 10px; 
+} 
