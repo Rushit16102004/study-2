@@ -11,41 +11,21 @@
     <div id="all">
 
         <header>
-            <nav id="navBar">
-                <div id="logo"></div>
-                    <a style="color: rgb(255, 255, 255);"  href="/index.html"><div class="navBarMem">Home</div></a>
-                    <a style="color: rgb(255, 255, 255);"  href="/old_paper.html"><div class="navBarMem"> GTU Old Paper</div></a>
-                        <!-- <select class="navBarMem navBarMemOption"   name="link" id="selectOption" size="1" onchange="window.location.href=this.value;">
-                            <option value="GTU Old Paper">
-                                GTU Old Paper
-                            </option>
-                            <option value="http://127.0.0.1:5500/gtuBranchSemPaper/ComputerSempaper.html">
-                                Computer
-                            </option>
-                            <option value="http://127.0.0.1:5500/gtuBranchSemPaper/InformationTechnologySemPaper.html">
-                                IT
-                            </option>
-                            <option value="http://127.0.0.1:5500/gtuBranchSemPaper/MechanicalSemPaper.html">
-                                Mechanical
-                            </option>
-                            <option value="http://127.0.0.1:5500/gtuBranchSemPaper/CivilSemPaper.html">
-                                Civil
-                            </option>
-                            <option value="http://127.0.0.1:5500/gtuBranchSemPaper/ElectricalSemPaper.html">
-                                Electrical
-                            </option>
-                            <option value="http://127.0.0.1:5500/gtuBranchSemPaper/Electronics&CommunicationSemPaper.html   ">
-                                Elect.& Commu.
-                            </option>
-                            <option value="http://127.0.0.1:5500/gtuBranchSemPaper/AutomobileSenPaper.html">
-                                Automobile
-                            </option>
-                            <option value="http://127.0.0.1:5500/gtuBranchSemPaper/CemicalSemPaper.html">
-                                Chemical
-                            </option>
-                        </select> -->
-                    <a style="color: rgb(255, 255, 255);"  href="/GTU_Syllabus.html"><div class="navBarMem">Syllabus</div></a>
-                    <a style="color: rgb(255, 255, 255);"  href="/GTU_books.html"><div class="navBarMem">Study Material</div></a>
+            <nav>
+                <ul class="slidebar">
+                    <li  onclick = hideSlidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="/index.html">Home </a></li>
+                    <li><a href="/old_paper.html">GTU Old Paper</a></li>
+                    <li><a href="/GTU_Syllabus.html">Syllabus</a></li>
+                    <li><a href="/GTU_books.html">Study Material</a></li>
+                    </ul>
+                <ul>
+                    <li class="hideOnMObile"><a href="/index.html">Home </a></li>
+                    <li class="hideOnMObile"><a href="/old_paper.html">GTU Old Paper</a></li>
+                    <li class="hideOnMObile"><a href="/GTU_Syllabus.html">Syllabus</a></li>
+                    <li class="hideOnMObile"><a href="/GTU_books.html">Study Material</a></li>
+                    <li class="hideOnMObile" onclick = showSlidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                </ul>
             </nav>
         </header>
 
