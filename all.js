@@ -13,8 +13,6 @@ function hideSlidebar(){
 const slidebar = document.querySelector('.slidebar');
 slidebar.style.display = 'none';
 
-
-
 function sem_1and2(){
     const sem_1_and_2 = document.querySelector('.sem_1_and_2');
     sem_1_and_2.style.display = 'flex';
