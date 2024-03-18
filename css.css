@@ -106,8 +106,10 @@ nav a:hover {
 .hideOnMObile a{
     color: white;
 }
-
-@media(max-width: 815px) {
+.topbar {
+    display: flex;
+}
+@media(max-width: 992px) {
     .hideOnMObile{
         display: none;
     }
@@ -462,3 +464,42 @@ td, th {
     color: white; 
     padding-bottom: 10px; 
 } 
+
+
+
+
+
+
+
+.sem-choices-container {
+    height: auto;
+    width: auto;
+    background: #162e83c6;
+}
+.sem-choices-container > ul {
+    display: flex;
+    flex-direction: row;
+color: #ffffff;
+    list-style: none;
+    padding : 5px;
+    padding-left: 5rem;
+}
+
+.sem-choices-container > ul > li > a {
+    color: #fff;
+}
+
+.sem_1_and_2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.sem_3, .sem_4, .sem_5, .sem_6, .sem_7 {
+    display: none;
+    flex-direction: column;
+}
+
+.sem-choices-container > ul > li >a:hover {
+    background-color: #dadae3;
+    color: black;
+}
