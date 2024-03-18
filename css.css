@@ -4,7 +4,7 @@
     font-family:sans-serif, Arial, Helvetica;
 }
 body {
-    background: linear-gradient(#e2e2ef,white);
+    background: linear-gradient(#bcbcce,white);
 }
 a {
     text-decoration: none;
@@ -44,6 +44,8 @@ nav {
     background-color: #162e83c6;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
     font-size: 1.3rem;
+    position: sticky;
+    top: 0px;
 }
 
 li {
@@ -467,16 +469,23 @@ td, th {
 
 .sem-choices-container {
     height: auto;
-    width: auto;
-    background: #162e83c6;
+    width: 100%;
+    background: #334fb4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.345);
+    top: 0px;
+    position: sticky;
+
 }
 .sem-choices-container > ul {
     display: flex;
     flex-direction: row;
-color: #ffffff;
+    color: #ffffff;
     list-style: none;
     padding : 5px;
-    padding-left: 5rem;
+    gap: 15px;
 }
 
 .sem-choices-container > ul > li > a {
