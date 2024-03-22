@@ -37,17 +37,26 @@ p {
     height: auto;
     width: auto;
 }
-
 nav {
+    /* Full width */
     width: 100%;
+    /* Height of navigation bar */
     height: 50px;
-    background-color: #162e83c6;
+    /* Opacity and color of the navigation bar */
+    background-color: rgba(22, 46, 131, 0.78);
+    /* Shadow of the navigation bar */
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    /* Font size of links */
     font-size: 1.3rem;
+    /* Position of the navigation bar */
     position: sticky;
+    /* Top position of the navigation bar */
     top: 0px;
+    /* Centers the navigation bar content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
 .nav-back {
     padding-right: 400px;
 }
@@ -114,8 +123,12 @@ nav a:hover {
 }
 .topbar {
     display: flex;
+    justify-content: space-between; /* Add this line to distribute the items evenly in the container */
+    align-items: center; /* Add this line to vertically center the items */
+    padding: 10px 20px; /* Add some padding to make the content look more balanced */
+    box-sizing: border-box; /* Add this line to include padding and border in the element's total width and height */
 }
-@media(max-width: 1186px) {
+@media(max-width: 1226px) {
     .hideOnMObile{
         display: none;
     }
@@ -335,7 +348,6 @@ nav a:hover {
     border-collapse: collapse;
     box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.211);
 }
-
 /* .table:hover {
     box-shadow: -5px 5px 10px rgb(223, 223, 223);
     transform: scale(1.001);
@@ -357,7 +369,7 @@ td, th {
 .col3 {
     padding: 1rem 2.9rem 1rem 2.9rem;
 }
-.col31:hover, .col21:hover {
+.col31:hover, .col21:hover, .col11:hover{
     color: blue;
     text-decoration: underline;
 }
