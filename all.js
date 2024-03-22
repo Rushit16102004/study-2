@@ -88,7 +88,7 @@ function sem_7() {
     sem_1_and_2.style.display = 'none';
     const sem_3 = document.querySelector('.sem_3');
     sem_3.style.display = 'none';
-    const sem_4= document.querySelector('.sem_4');
+    const sem_4 = document.querySelector('.sem_4');
     sem_4.style.display = 'none';
     const sem_5 = document.querySelector('.sem_5');
     sem_5.style.display = 'none';
