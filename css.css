@@ -1,10 +1,10 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family:sans-serif, Arial, Helvetica;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 body {
-    background: linear-gradient(#fff8f8,white);
+    background: linear-gradient(from bottom, #fff8f8 0%, white 100%);
 }
 a {
     text-decoration: none;
@@ -424,21 +424,26 @@ td, th {
 }
 
 .button {
+    /* Set border, line-height, padding, and font-size */
     border: 0;
     line-height: 2.5;
     padding: 0 20px;
     font-size: 1rem;
+    /* Center text and set color */
     text-align: center;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
+    /* Add border-radius and background-color */
     border-radius: 10px;
     background-color: #697ef3;
+    /* Use linear-gradient for background-image */
     background-image: linear-gradient(
-    to top left,     
+    to top left,
     rgba(0, 0, 0, 0.2),
     rgba(0, 0, 0, 0.2) 30%,
     rgba(0, 0, 0, 0)
     );
+    /* Add box-shadow with inset and transition properties */
     box-shadow:
     inset 2px 2px 3px rgba(170, 149, 255, 0.6),
     inset -2px -2px 3px rgba(0, 0, 0, 0.6);
@@ -516,7 +521,6 @@ td, th {
     display: none;
     flex-direction: column;
 }
-
 
 .sem-choices-container > ul > li >a:hover {
     background-color: #dadae3;
