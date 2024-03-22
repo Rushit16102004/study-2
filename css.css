@@ -48,6 +48,10 @@ nav {
     top: 0px;
 }
 
+.nav-back {
+    padding-right: 400px;
+}
+
 li {
     height: auto;
     color: #e2e2ef;
@@ -84,7 +88,7 @@ nav a:hover {
     right: 0;
     height: 100vh;
     width: 250px;
-    z-index: 333;
+    z-index: 3333;
     background-color: #ffffff43;
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
@@ -111,7 +115,7 @@ nav a:hover {
 .topbar {
     display: flex;
 }
-@media(max-width: 992px) {
+@media(max-width: 1186px) {
     .hideOnMObile{
         display: none;
     }
@@ -454,8 +458,8 @@ td, th {
 } 
 
 .marq { 
-    padding-top: 30px; 
-    padding-bottom: 30px; 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
     background-color:  #485dcfb6;
     margin-top: 1.5rem;
 } 
@@ -466,18 +470,17 @@ td, th {
     color: white; 
     padding-bottom: 10px; 
 } 
-
 .sem-choices-container {
-    height: auto;
-    width: 100%;
-    background: #334fb4;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #334fb4;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.345);
-    top: 0px;
     position: sticky;
-
+    top: 0;
+    z-index: 200;
+    width: 100%;
+    height: auto;
 }
 .sem-choices-container > ul {
     display: flex;
@@ -501,6 +504,7 @@ td, th {
     display: none;
     flex-direction: column;
 }
+
 
 .sem-choices-container > ul > li >a:hover {
     background-color: #dadae3;

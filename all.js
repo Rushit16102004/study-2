@@ -97,3 +97,6 @@ function sem_7() {
     const sem_7 = document.querySelector('.sem_7');
     sem_7.style.display = 'flex';
 }
+function Go_back() {
+    window.history.back(-1);
+}
