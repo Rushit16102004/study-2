@@ -57,9 +57,6 @@ nav {
     align-items: center;
     justify-content: center;
 }
-.nav-back {
-    padding-right: 400px;
-}
 
 li {
     height: auto;
@@ -128,12 +125,15 @@ nav a:hover {
     padding: 10px 20px; /* Add some padding to make the content look more balanced */
     box-sizing: border-box; /* Add this line to include padding and border in the element's total width and height */
 }
-@media(max-width: 1226px) {
+@media(max-width: 1000px) {
     .hideOnMObile{
         display: none;
     }
     .menu-button {
         display: block;
+    }
+    .Menu > a {
+        display: none;
     }
 }
 @media(max-width: 400px) {
@@ -525,4 +525,31 @@ td, th {
 .sem-choices-container > ul > li >a:hover {
     background-color: #dadae3;
     color: black;
+}
+
+.Menu {
+    display: flex;
+    flex-direction: column;
+}
+.Menu > a {
+    margin: .89rem;
+}
+.sub_Menu {
+    display: none;
+    flex-direction:column ;
+    color: #000;
+    background-color: rgb(88, 143, 255);
+}
+.Drop_down_item {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.2rem;
+}
+.sub_Menu > li {
+    width: 100%;
+    margin-left: 15px;
+}
+.sub_Menu > li > a:hover {
+    background-color: rgb(66, 115, 213);
+    color: white;
 }

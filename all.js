@@ -3,6 +3,7 @@ function showSlidebar(){
     slidebar.style.display = 'flex';
     const topbar = document.querySelector('.topbar');
     topbar.style.display = 'none';
+
 }
 function hideSlidebar(){
     const slidebar = document.querySelector('.slidebar');
@@ -13,9 +14,19 @@ function hideSlidebar(){
 const slidebar = document.querySelector('.slidebar');
 slidebar.style.display = 'none';
 
+function display_sub_Menu() {
+    const sub_Menu = document.querySelector('.sub_Menu');
+    sub_Menu.style.display = 'flex';
+}
+function hide_sub_Menu() {
+    const sub_Menu = document.querySelector('.sub_Menu');
+    sub_Menu.style.display = 'none';
+}
+
 function sem_1and2(){
     const sem_1_and_2 = document.querySelector('.sem_1_and_2');
     sem_1_and_2.style.display = 'flex';
+    sem_1_and_2.style.backgroundcolor = black;
     const sem_3 = document.querySelector('.sem_3');
     sem_3.style.display = 'none';
     const sem_4= document.querySelector('.sem_4');
