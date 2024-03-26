@@ -504,7 +504,7 @@ td, th {
     flex-direction: row;
     color: #ffffff;
     list-style: none;
-    padding : 5px;
+    /* margin: 3px; */
     gap: 15px;
 }
 
@@ -534,22 +534,24 @@ td, th {
 .Menu > a {
     margin: .89rem;
 }
-.sub_Menu {
+.oldpaper_sub_Menu, .studymaterial_branch_sub_Menu{
     display: none;
     flex-direction:column ;
     color: #000;
     background-color: rgb(88, 143, 255);
+    width: 300px;
 }
-.Drop_down_item {
+.Drop_down_oldpaper, .Drop_down_studymaterial_branch{
     display: flex;
     flex-direction: column;
     padding-top: 0.2rem;
 }
-.sub_Menu > li {
+
+.oldpaper_sub_Menu > li  {
     width: 100%;
     margin-left: 15px;
 }
-.sub_Menu > li > a:hover {
+.oldpaper_sub_Menu > li > a:hover{
     background-color: rgb(66, 115, 213);
     color: white;
 }
