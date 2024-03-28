@@ -14,6 +14,7 @@
             <nav class="nav-container">
                 <ul class="slidebar">
                     <li  onclick = hideSlidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><input onclick = darkModeON() class="pristine" type="checkbox" name="toggle" value="on"></li>
                     <li><a href="/index.html">Home </a></li>
                     <li><a href="/old_paper.html">GTU Old Paper</a></li>
                     <li><a href="/GTU_Syllabus.html">Syllabus</a></li>
@@ -37,6 +38,7 @@
                         </li>
                     <li class="hideOnMObile"><a href="/GTU_Syllabus.html">Syllabus</a></li>
                     <li class="hideOnMObile"><a href="/GTU_books.html">Study Material </a></li>
+                    <li><input onclick = darkModeON() class="pristine hideOnMObile" type="checkbox" name="toggle" value="on"></li>
                     <li onclick = showSlidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                 </ul>
             </nav>
@@ -45,9 +47,9 @@
     
         <div onmousemove = hide_sub_Menu() class="mainContainer">
             <h1>
-                GtuLibrary Brings For You
+                GTU Library Brings For You
             </h1><br>
-            <div id="brings">
+            <div class="brings">
                 <div class="bringsLink"><a href="/GTU_books.html"><img class="img img2" src="/photos/STUDY-CARD.jpg"></a>
                     <div class="size">
                         GTU Study Material
@@ -67,9 +69,9 @@
             </div>
             <br><br><br>
             <h1>
-                GtuLibrary Serve For This Branches
+                GTU Library Serve For This Branches
             </h1>
-            <div id="serve">
+            <div class="serve">
     
                 <div class="serveLink">
                     <div class="backImg">
@@ -207,12 +209,9 @@
                 <br><br><br>
                 <div>&#169; Corporate 2024.all rights received </div>
             </div>
-        </footer>
+        </footer>        
     </div>
 
     <script src="/all.js"></script>
 </body>
 </html>
-
-
-<!-- note computer OLD paper is ok -->

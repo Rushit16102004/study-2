@@ -195,3 +195,36 @@ function sem_7() {
 function Go_back() {
     window.history.back(-1);
 }
+
+document.addEventListener("click",e => {
+    let tar = e.target;
+    if (tar.name == "toggle")
+    tar.removeAttribute("class");
+});
+
+//dark mode//
+function darkModeON() {
+    var mainContainer = document.querySelector('.all');
+    mainContainer.classList.toggle("dark-mode");
+    document.querySelectorAll("body").forEach((body) => {
+        body.classList.toggle('dark-mode');
+    });
+    document.querySelectorAll("h1").forEach((h1) => {
+        h1.classList.toggle('dark-mode');
+    });
+    document.querySelectorAll(".brings").forEach((brings) => {
+        brings.classList.toggle('dark-mode-brings_serveLink');
+    });
+    document.querySelectorAll(".serveLink").forEach((serveLink) => {
+        serveLink.classList.toggle('dark-mode-brings_serveLink');
+    });
+    document.querySelectorAll(".col-BackColor").forEach((col_BackColor) => {
+        col_BackColor.classList.toggle('dark-mode-col-BackColor');
+    });
+    document.querySelectorAll(".col11").forEach((col11) => {
+        col11.classList.toggle('dark-mode-col-11-21');
+    });
+    document.querySelectorAll(".col21").forEach((col21) => {
+        col21.classList.toggle('dark-mode-col-11-21');
+    });
+}
