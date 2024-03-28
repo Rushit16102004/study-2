@@ -12,6 +12,10 @@ a {
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
+.mainContainer > p > a {
+    text-decoration: underline;
+    color: blue;
+}
 
 .dark-mode {
     background-color: rgb(47, 47, 47);
@@ -130,7 +134,7 @@ nav a:hover {
     width: 250px;
     z-index: 3333;
     background-color: #ffffff43;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
