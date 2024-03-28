@@ -13,22 +13,6 @@ a {
     color: rgb(0, 0, 0);
 }
 
-.dark-mode {
-    background-color: rgb(47, 47, 47);
-    color: white;
-}
-.dark-mode-brings_serveLink {
-    background: linear-gradient(180deg,#272737,#7b7b82,#8b8b8b);
-    color: white;
-}
-.dark-mode-col-BackColor {
-    background-color: rgb(197, 197, 197);
-    color: black;
-}
-.dark-mode-col-11-21 {
-    color: white;
-}
-
 .img {
     width: 50%;
     height: 80%;
@@ -612,6 +596,9 @@ input {
     margin-top: 10px;
     font: 20px/1.5 sans-serif;
 }
+.slidebar > .dark-button {
+    padding-left: 30px;
+}
 input[type=checkbox] {
     --off: #e4e4e4;
     --mid: #829ad6;
@@ -744,4 +731,21 @@ input[type=checkbox].pristine, input[type=checkbox].pristine:before {
         left: 1.125em;
         width: 1em;
     }
+}
+
+/* dark mode */
+.dark-mode {
+    background-color: rgb(47, 47, 47);
+    color: white;
+}
+.dark-mode-brings_serveLink {
+    background: linear-gradient(180deg,#2d2d3f,#7b7b82,#8b8b8b);
+    color: white;
+}
+.dark-mode-col-BackColor {
+    background-color: rgb(197, 197, 197);
+    color: black;
+}
+.dark-mode-col-1-11-21, .dark-mode-pre {
+    color: white;
 }
