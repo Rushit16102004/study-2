@@ -8,6 +8,11 @@
 body {
     background: linear-gradient(from bottom, #fff8f8 0%, white 100%);
 }
+span {
+    font-size: 2rem;
+    text-align: center;
+    color: rgba(255, 0, 0, 0.079);
+}
 a {
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -221,6 +226,10 @@ nav a:hover {
     .img {
         height: 0px;
         margin: 0rem;
+        border-width: 0 10px 13px 10px;
+    }
+    .img2 {
+        border-width: 2.5px;
     }
     .img:hover {
         box-shadow: 0.5rem 0.5rem 30rem rgb(255, 207, 207) ;
@@ -375,15 +384,19 @@ td, th {
     font-weight: bold;
     color: rgb(0, 0, 0);
 }
+
 .col1 {
     padding: 1rem 0.6rem 1rem 0.6rem;
 }
+
 .col2 {
     padding: 1rem 1.1rem 1rem 1.1rem;
 }
+
 .col3 {
     padding: 1rem 2.9rem 1rem 2.9rem;
 }
+
 .col31:hover, .col21:hover, .col11:hover{
     color: blue;
     text-decoration: underline;
@@ -392,9 +405,11 @@ td, th {
 .tableOLD {
     width: 70%;
 }
+
 .colOLD1 {
     padding: 1rem 2rem 1rem 2rem;
 }
+
 .col-BackColor {
     color: white;
     background-color: #2b2b2bba;
@@ -409,6 +424,7 @@ td, th {
     gap: 3rem;
     text-align: center;
 }
+
 .booksContainer {
     height: auto;
     width: auto;
@@ -426,12 +442,14 @@ td, th {
     gap: 1rem;
     align-items: center;
 }
+
 .book {
     height: 300px;
     width: 300px;
     background-image: url(/photos/darkphoto1.avif);
     background-size: cover;
 }
+
 .subName {
     width: 400px;    
     text-align: center;
@@ -488,11 +506,13 @@ td, th {
     40%, 100% {
         transform: rotateZ(0);
     }
-}  
+} 
+
 .button:hover {
     background-color: rgba(255, 0, 0, 1);
     transform: scale(1.05);
 }
+
 .button:active {
     box-shadow:
     inset -2px -2px 3px rgba(255, 255, 255, 0.6),
@@ -525,6 +545,7 @@ td, th {
     color: white; 
     padding-bottom: 10px; 
 } 
+
 .sem-choices-container {
     display: flex;
     justify-content: center;
@@ -537,6 +558,7 @@ td, th {
     width: 100%;
     height: auto;
 }
+
 .sem-choices-container > ul {
     display: flex;
     flex-direction: row;
@@ -565,13 +587,16 @@ td, th {
     color: black;
 }
 
+
 .Menu {
     display: flex;
     flex-direction: column;
 }
+
 .Menu > a {
     margin: .89rem;
 }
+
 .oldpaper_sub_Menu, .studymaterial_branch_sub_Menu{
     display: none;
     flex-direction:column ;
@@ -579,6 +604,7 @@ td, th {
     background-color: rgb(88, 143, 255);
     width: auto;
 }
+
 .Drop_down_oldpaper, .Drop_down_studymaterial_branch{
     display: flex;
     flex-direction: column;
@@ -589,6 +615,7 @@ td, th {
     width: 100%;
     margin-left: 15px;
 }
+
 .oldpaper_sub_Menu > li > a:hover{
     background-color: rgb(66, 115, 213);
     color: white;
@@ -600,9 +627,11 @@ input {
     margin-top: 10px;
     font: 20px/1.5 sans-serif;
 }
+
 .slidebar > .dark-button {
     padding-left: 30px;
 }
+
 input[type=checkbox] {
     --off: #e4e4e4;
     --mid: #829ad6;
@@ -625,6 +654,7 @@ input[type=checkbox] {
     appearance: none;
     -webkit-tap-highlight-color: transparent;
 }
+
 input[type=checkbox]:before {
     animation: handleOff var(--transDur) var(--timing);
     background-attachment: fixed;
@@ -643,18 +673,23 @@ input[type=checkbox]:before {
     width: 1em;
     height: 0.75em;
 }
+
 input[type=checkbox]:checked {
     animation: bgOn var(--transDur) var(--timing) forwards;
 }
+
 input[type=checkbox]:checked:before {
     animation: handleOn var(--transDur) var(--timing) forwards;
 }
+
 input[type=checkbox]:focus {
     outline: none;
 }
+
 input[type=checkbox].pristine, input[type=checkbox].pristine:before {
     animation: none;
 }
+
   /* Animations */
 @keyframes bgOff {
     from {
@@ -739,17 +774,46 @@ input[type=checkbox].pristine, input[type=checkbox].pristine:before {
 
 /* dark mode */
 .dark-mode {
-    background-color: rgb(47, 47, 47);
-    color: white;
+    background:linear-gradient(#393646, #4F4557,#6D5D6E);
+    color: #EDEDED;
 }
 .dark-mode-brings_serveLink {
     background: linear-gradient(180deg,#2d2d3f,#7b7b82,#8b8b8b);
-    color: white;
+    color: #EDEDED;
 }
 .dark-mode-col-BackColor {
-    background-color: rgb(197, 197, 197);
-    color: black;
+    background-color: rgb(136, 136, 136);
+    color: #EDEDED;
 }
 .dark-mode-col-1-11-21, .dark-mode-pre {
-    color: white;
+    color: #EDEDED;
+}
+
+/* error page */
+.container {
+    margin: 200px 650px;
+    max-width: 500px;
+}
+
+.go-back a {
+    display: inline-block;
+    margin-top: 3em;
+    padding: 10px;
+    color: #1B1A1A;
+    font-weight: 700;
+    border: solid 2px #e7e7e7;
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.go-back a:hover {
+    border-color: #1B1A1A;
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 48px;
+    }
 }
