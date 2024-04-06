@@ -91,6 +91,7 @@ li {
     padding-right: 15px;
 }
 
+/* navbar */
 nav ul {
     width: 100%;
     list-style: none;
@@ -110,10 +111,6 @@ nav a {
     align-items: center;
 }
 
-nav a:hover {
-    background-color: #cacaca;
-    color: black;
-}
 .slidebar {
     font-size: 1.3rem;
     position: fixed;
@@ -132,9 +129,11 @@ nav a:hover {
     display: block; 
     color: #000;
 }
+
 .slidebar li {
     width: 100%;
 }
+
 .slidebar a {
     width: 100%;
 }
@@ -142,9 +141,57 @@ nav a:hover {
 .menu-button {
     display: none;
 }
+
+.hideOnMObile{
+    border-bottom: 5px solid transparent;
+    border-radius: 400px;
+}
+
 .hideOnMObile a{
     color: white;
 }
+
+
+nav .hideOnMObile:hover {
+    border-bottom: 5px solid #001B79;
+    border-radius: 400px;
+}
+
+.Menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.Menu > a {
+    margin: .89rem;
+}
+
+.oldpaper_sub_Menu, .studymaterial_branch_sub_Menu{
+    display: none;
+    flex-direction:column ;
+    color: #000;
+    background-color: rgb(88, 143, 255);
+    width: auto;
+}
+
+.Drop_down_oldpaper, .Drop_down_studymaterial_branch{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.2rem;
+}
+
+.oldpaper_sub_Menu > li  {
+    width: 100%;
+    margin-left: 15px;
+}
+
+.oldpaper_sub_Menu > li > a:hover{
+    background-color: rgb(66, 115, 213);
+    color: white;
+    border-bottom: 2px solid #001B79;
+    border-radius: 50px;
+} 
+
 .topbar {
     display: flex;
     justify-content: space-between; /* Add this line to distribute the items evenly in the container */
@@ -152,6 +199,7 @@ nav a:hover {
     padding: 10px 20px; /* Add some padding to make the content look more balanced */
     box-sizing: border-box; /* Add this line to include padding and border in the element's total width and height */
 }
+
 @media(max-width: 1000px) {
     .hideOnMObile{
         display: none;
@@ -265,6 +313,7 @@ nav a:hover {
         height: 75%;
     }
 }
+/* end navbar */
 
 .mainContainer {
     height: auto;
@@ -587,42 +636,8 @@ td, th {
     color: black;
 }
 
-
-.Menu {
-    display: flex;
-    flex-direction: column;
-}
-
-.Menu > a {
-    margin: .89rem;
-}
-
-.oldpaper_sub_Menu, .studymaterial_branch_sub_Menu{
-    display: none;
-    flex-direction:column ;
-    color: #000;
-    background-color: rgb(88, 143, 255);
-    width: auto;
-}
-
-.Drop_down_oldpaper, .Drop_down_studymaterial_branch{
-    display: flex;
-    flex-direction: column;
-    padding-top: 0.2rem;
-}
-
-.oldpaper_sub_Menu > li  {
-    width: 100%;
-    margin-left: 15px;
-}
-
-.oldpaper_sub_Menu > li > a:hover{
-    background-color: rgb(66, 115, 213);
-    color: white;
-} 
-
-
-/* dark mode button */
+/* dark mode */
+/* dark modebutton */
 input {
     margin-top: 10px;
     font: 20px/1.5 sans-serif;
@@ -690,7 +705,6 @@ input[type=checkbox].pristine, input[type=checkbox].pristine:before {
     animation: none;
 }
 
-  /* Animations */
 @keyframes bgOff {
     from {
         background-color: var(--on);
@@ -771,8 +785,8 @@ input[type=checkbox].pristine, input[type=checkbox].pristine:before {
         width: 1em;
     }
 }
+/* end darkbutton */
 
-/* dark mode */
 .dark-mode {
     background:linear-gradient(#393646, #4F4557,#6D5D6E);
     color: #EDEDED;
@@ -788,32 +802,106 @@ input[type=checkbox].pristine, input[type=checkbox].pristine:before {
 .dark-mode-col-1-11-21, .dark-mode-pre {
     color: #EDEDED;
 }
+/* end dark mode */
 
 /* error page */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 .container {
-    margin: 200px 650px;
-    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    column-gap: 20px;
 }
-
-.go-back a {
-    display: inline-block;
-    margin-top: 3em;
-    padding: 10px;
-    color: #1B1A1A;
+.container img {
+    width: 420px;
+}
+.text {
+    display: block;
+    padding: 40px 40px;
+    width: 450px;
+}
+.text h1 {
+    color: #1f575a;
+    font-size: 35px;
     font-weight: 700;
-    border: solid 2px #e7e7e7;
-    text-decoration: none;
+    margin-bottom: 15px;
+}
+.text p {
+    font-size: 15px;
+    color: #528d8d;
+    margin-bottom: 15px;
+    line-height: 1.5rem;
+    margin-bottom: 15px;
+}
+.text .input-box{
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+.input-box input{
+    width: 85%;
+    height: 40px;
+    padding: 5px 15px;
     font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
+    color: #22232e;
+    border-radius: 5px 5px 0px 0px;
+    border: none;
+    outline: none;
 }
-
-.go-back a:hover {
-    border-color: #1B1A1A;
+.menu li a{
+    display: flex;
+    font-size: 1rem;
+    color: #00c2cb;
+    transition: 0.1s;
 }
-
-@media screen and (max-width: 480px) {
-    h1 {
-        font-size: 48px;
+.result-box{
+    width: 85%;
+}
+.result-box ul {
+    border-top: 2px solid #42455a;
+    padding: 10px 5px;
+    background: #907b7b;
+}
+.result-box ul li {
+    list-style: none;
+    border-radius: 3px ;
+    padding: 10px 5px;
+    cursor: pointer;
+    color: #22232e;
+}
+.result-box ul li:hover {
+    background-color: #758a8a;
+}
+.result-box {
+    max-height: 100px;
+    overflow: scroll;
+    border-radius: 0px 0px 5px 5px;
+}
+.result-box li a{
+    color: #22232e;
+}
+.result-box li:focus a{
+    color: #8aaaaa;
+}
+@media screen and (max-width:600px) {
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .text,.image{
+        width: 100%;
+    } 
+    .container{
+        min-width: 200px;
+        padding: 40px 0px;
+    }
+    .image{
+        display: flex;
+        width: 200px;
+        align-self: center;
+        justify-content: center;
+        margin: auto;
     }
 }
+/*end error page */
