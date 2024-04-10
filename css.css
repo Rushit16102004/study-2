@@ -244,6 +244,10 @@ nav .hideOnMObile:hover {
         font-size: 1.14;
     }
 
+    .serve {
+        padding: 1ex 0ch 0ex 0ch;
+    }
+
     .serveLink {
         display: flex;
         flex-direction: column;
@@ -313,6 +317,10 @@ nav .hideOnMObile:hover {
     .img {
         height: 75%;
     }
+
+    #inspiring-quotes-container {
+        display: none;
+    }
 }
 /* end navbar */
 
@@ -344,10 +352,7 @@ nav .hideOnMObile:hover {
 
 .serve {
     height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 2ex 6ch 2ex 6ch;
+    padding: 10px 40px 10px 40px;
 }
 
 .serveLink {
@@ -885,6 +890,7 @@ input[type=checkbox].pristine, input[type=checkbox].pristine:before {
 .result-box li:focus a{
     color: #8aaaaa;
 }
+
 @media screen and (max-width:600px) {
     .container{
         display: flex;
@@ -906,3 +912,92 @@ input[type=checkbox].pristine, input[type=checkbox].pristine:before {
     }
 }
 /*end error page */
+
+/* quotes */
+#inspiring-quotes-container {
+    height:100%;
+    width: 100%;
+    background: linear-gradient(rgb(216, 229, 255),rgba(219, 211, 255, 0));
+
+}
+
+#back-Img {
+    height:450px;
+    width: 90%;
+    background-image: url(/photos/all.png);
+    background-size: cover ;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    font-size: 2.5rem;
+    padding-left: 150px;
+}
+
+#inspiring-quotes-container > #back-Img > div {
+    width: 400px;
+    color: rgb(118, 118, 118);
+}
+/* end quotes */
+
+/* review-container */
+#review-container {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    background-color: rgba(150, 197, 255, 0.33);
+}
+.review_imfo {
+    height: 220px;
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid rgba(0, 0, 0, 0.147);
+    border-radius: 40%;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.review_img {
+    height: 130px;
+    width: 130px;
+    opacity:0.8;
+}
+
+.overlay {
+    height: 80%;
+    width: 80%;
+    display: none;
+}
+
+.img_and_imfo {
+    position: relative;
+    padding: 0;
+    width: 300px;
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+}
+.content {
+    opacity: 0;
+    font-size:30px;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    color: #ff1f1f;
+    background-color: rgba(200, 200, 200, 0);
+    width: 250px;
+    height: 150px;
+    transition: all 400ms ease-out;
+    text-align: center;
+}
+.img_and_imfo .content:hover {
+    opacity: 1;
+    text-align: center;
+}
+.img_and_imfo .content .text {
+    width: 180px;
+}
+
+/* end review-container */
