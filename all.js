@@ -3,7 +3,8 @@ function showSlidebar(){
     slidebar.style.display = 'flex';
     const topbar = document.querySelector('.topbar');
     topbar.style.display = 'none';
-
+    const review_img = document.querySelectorAll('.review_img');
+    review_img.style.display = 'none'
 }
 function hideSlidebar(){
     const slidebar = document.querySelector('.slidebar');

@@ -69,7 +69,7 @@ nav {
     /* Full width */
     width: 100%;
     /* Height of navigation bar */
-    height: 50px;
+    height: 70px;
     /* Opacity and color of the navigation bar */
     background-color: rgba(22, 46, 131, 0.78);
     /* Shadow of the navigation bar */
@@ -200,7 +200,11 @@ nav .hideOnMObile:hover {
     padding: 10px 20px; /* Add some padding to make the content look more balanced */
     box-sizing: border-box; /* Add this line to include padding and border in the element's total width and height */
 }
-
+#logo {
+    height: 60px;
+    width: 150px;
+    mix-blend-mode: multiply;
+}
 @media(max-width: 1000px) {
     .hideOnMObile{
         display: none;
@@ -232,10 +236,10 @@ nav .hideOnMObile:hover {
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
-    /* #logo {
+    #logo {
         height: 50px;
         width: 110px;
-    } */
+    }
     .navBarMem{
         font-size: 1.14rem;
     }
@@ -328,7 +332,6 @@ nav .hideOnMObile:hover {
     height: auto;
     width: auto;
     text-align: center;
-    margin-top: 2rem;
 }
 
 .brings {
@@ -414,6 +417,9 @@ nav .hideOnMObile:hover {
     font-size: 1.01rem;
 }
 
+.copyRight > a {
+    padding-right: 20PX;
+}
 .table{
     width: 50%;
     margin: auto;
@@ -918,7 +924,6 @@ input[type=checkbox].pristine, input[type=checkbox].pristine:before {
     height:100%;
     width: 100%;
     background: linear-gradient(rgb(216, 229, 255),rgba(219, 211, 255, 0));
-
 }
 
 #back-Img {
@@ -947,6 +952,9 @@ input[type=checkbox].pristine, input[type=checkbox].pristine:before {
     justify-content:space-around;
     flex-wrap: wrap;
     background-color: rgba(150, 197, 255, 0.33);
+    margin-bottom: 30px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.304);
+    margin-top: 35px;
 }
 .review_imfo {
     height: 220px;
@@ -979,6 +987,7 @@ input[type=checkbox].pristine, input[type=checkbox].pristine:before {
     cursor: pointer;
     overflow: hidden;
 }
+
 .content {
     opacity: 0;
     font-size:30px;
@@ -1000,4 +1009,35 @@ input[type=checkbox].pristine, input[type=checkbox].pristine:before {
     width: 180px;
 }
 
+@media only screen and (max-width: 705px) {
+    .review_imfo {
+        height: 150px;
+        width: 150px;
+        font-size: 1.5rem;
+    }
+    .review_img {
+        height: 90px;
+        width: 90px;
+    }
+    .content {
+        display: none;
+    }
+        spam {
+        font-size:0.2rem;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .review_imfo {
+        height: 90px;
+        width: 90px;
+        font-size: 1.1rem;
+    }
+    .review_img {
+        height: 50px;
+        width: 50px;
+    }
+    .content {
+        display: none;
+    }
+}   
 /* end review-container */

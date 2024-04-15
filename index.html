@@ -21,6 +21,7 @@
                 </ul>
                 <ul class="topbar">
                     <li class="nav-back" onclick = Go_back()><a><i class="fa-solid fa-arrow-left"></i></a></li>
+                    <li><img id="logo" src="/photos/logo.png"></li>
                     <li class="hideOnMObile"><a href="/index.html"> Home</a></li>
                         <li class="hideOnMObile Menu">
                             <a onmousemove = display_oldpaper_branch() href="#"><pre>GTU  Old Paper  <i class="fa-solid fa-caret-down"></i></pre></a>
@@ -37,16 +38,14 @@
                         </li>
                     <li class="hideOnMObile"><a href="/GTU_Syllabus.html">Syllabus</a></li>
                     <li class="hideOnMObile"><a href="/GTU_books.html">Study Material </a></li>
-                    <li><input onclick = darkModeON() class="pristine hideOnMObile" type="checkbox" name="toggle" value="on"></li>
+                    <li><input onclick = darkModeON() class="pristine" type="checkbox" name="toggle" value="on"></li>
                     <li onclick = showSlidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                 </ul>
             </nav>
         <span>R^2</span>
         </header>
         <div onmousemove = hide_sub_Menu() class="mainContainer">
-            <h1>
-                GTU Library Brings For You
-            </h1><br><br>
+            <h1>GTU Library Brings For You</h1>
             <div class="brings">
                 <div class="bringsLink"><a href="/GTU_books.html"><img class="img img2" src="/photos/STUDY-CARD.jpg"></a>
                     <div class="size">
@@ -64,9 +63,17 @@
                     </div>
                 </div>  
             </div>
-            <br>
 
             <div id="review-container">
+                <div class="review_imfo">
+                    <div class="img_and_imfo">
+                        <img class="review_img" src="/photos/users.png">
+                        <div class="content">
+                            <div class="text">trusted websites for students</div>
+                        </div>
+                    </div>
+                    <strong>40K+ Users</strong>
+                </div>
                 <div class="review_imfo">
                     <div class="img_and_imfo">
                         <img class="review_img" src="/photos/books.webp">
@@ -74,9 +81,7 @@
                             <div class="text">technical, drashan books are available</div>
                         </div>
                     </div>
-                        <strong>
-                            1000+ books
-                        </strong>
+                        <strong>1000+ Books</strong>
                 </div>                
                 <div class="review_imfo">
                     <div class="img_and_imfo">
@@ -85,35 +90,20 @@
                             <div class="text"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i> 4.5 rating</div>
                         </div>
                     </div>
-                    <strong>
-                        50K+ review
-                    </strong>
-                </div>
-                <div class="review_imfo">
-                    <div class="img_and_imfo">
-                        <img class="review_img" src="/photos/users.png">
-                        <div class="content">
-                            <div class="text">trusted websites for students</div>
-                        </div>
-                    </div>
-                    <strong>
-                        80K+ users
-                    </strong>
+                    <strong>25K+ Review</strong>
                 </div>
             </div><br>
 
             <h1>
                 GTU Library Serve For This Branches
-            </h1><br><br>
+            </h1>
             <div class="serve">
                 <div class="serveLink">
                     <div class="backImg">
                         <img class="img" src="/photos/comp.jpg">
                     </div>
                     <div class="links">
-                        <h3>
-                            07- Computer Engineering
-                        </h3>
+                        <h3>07- Computer Engineering</h3>
                         <div class="link">
                             <a href="#"> <div class="linkBox"> <p>Syllabus</p> </div> </a>
                             <a href="/gtuBranchSemPaper/ComputerSempaper.html"> <div class="linkBox"> <p>Old Paper</p> </div> </a>
@@ -125,9 +115,7 @@
                         <img class="img" src="/photos/IT-CARD.jpg">
                     </div>
                     <div class="links">
-                        <h3>
-                            16 – Information Technology
-                        </h3>
+                        <h3>16 – Information Technology</h3>
                         <div class="link">
                             <a href="#"> <div class="linkBox"> <p>Syllabus</p> </div> </a>
                             <a href="/gtuBranchSemPaper/InformationTechnologySemPaper.html"> <div class="linkBox"> <p>Old Paper</p> </div> </a>
@@ -139,9 +127,7 @@
                         <img class="img" src="/photos/MECH-CARD.jpg".>
                     </div>
                     <div class="links">
-                        <h3>
-                            19 – Mechanical Engineering
-                        </h3>
+                        <h3>19 – Mechanical Engineering</h3>
                         <div class="link">
                             <a href="#"> <div class="linkBox"> <p>Syllabus</p> </div> </a>
                             <a href="/gtuBranchSemPaper/MechanicalSemPaper.html"> <div class="linkBox"> <p>Old Paper</p> </div> </a>
@@ -153,9 +139,7 @@
                         <img class="img" src="/photos/CIVIL-CARD.jpg">
                     </div>
                     <div class="links">
-                        <h3>
-                            06 – Civil Engineering
-                        </h3>
+                        <h3>06 – Civil Engineering</h3>
                         <div class="link">
                             <a href="#"> <div class="linkBox"> <p>Syllabus</p> </div> </a>
                             <a href="/gtuBranchSemPaper/CivilSemPaper.html"> <div class="linkBox"> <p>Old Paper</p> </div> </a>
@@ -167,10 +151,8 @@
                         <img class="img" src="/photos/ELE-CARD.jpg">
                     </div>
                     <div class="links">
-                        <h3>
-                            09 – Electrical Engineering
-                        </h3>
-                        <div class="link">
+                        <h3>09 – Electrical Engineering</h3>
+                        <div class="link">-
                             <a href="#"> <div class="linkBox"> <p>Syllabus</p> </div> </a>
                             <a href="/gtuBranchSemPaper/ElectricalSemPaper.html"> <div class="linkBox"> <p>Old Paper</p> </div> </a>
                         </div>
@@ -181,9 +163,7 @@
                         <img class="img" src="/photos/EC-CARD.jpg">
                     </div>
                     <div class="links">
-                        <h3>
-                            10 – Electronics & Communication Engineering
-                        </h3>
+                        <h3>10 – Electronics & Communication Engineering</h3>
                         <div class="link">
                             <a href="#"> <div class="linkBox"> <p>Syllabus</p> </div> </a>
                             <a href="/gtuBranchSemPaper/Electronics&CommunicationSemPaper.html"> <div class="linkBox"> <p>Old Paper</p> </div> </a>
@@ -195,9 +175,7 @@
                         <img class="img" src="/photos/AUTO-CARD.jpg">
                     </div>
                     <div class="links">
-                        <h3>
-                            02 – Automobile Engineering
-                        </h3>
+                        <h3>02 – Automobile Engineering</h3>
                         <div class="link">
                             <a href="#"> <div class="linkBox"> <p>Syllabus</p> </div> </a>
                             <a href="/gtuBranchSemPaper/AutomobileSenPaper.html"> <div class="linkBox"> <p>Old Paper</p> </div> </a>
@@ -209,9 +187,7 @@
                         <img class="img" src="/photos/CHEM-CARD.jpg">
                     </div>
                     <div class="links">
-                        <h3>
-                            05 - Chemical Engineering
-                        </h3>
+                        <h3>05 - Chemical Engineering</h3>
                         <div class="link">
                             <a href="#"> <div class="linkBox"> <p>Syllabus</p> </div> </a>
                             <a href="/gtuBranchSemPaper/CemicalSemPaper.html"> <div class="linkBox"> <p>Old Paper</p> </div> </a>
@@ -228,16 +204,19 @@
             </div>
         </div>
         <marquee class="marq" direction="right" loop="">
-            <div class="geek2">
-                Made By RDMS Boys
-            </div>
+            <div class="geek2">***********************************************************************************************************************************************</div>
         </marquee>
         <footer>
             <div class="copyRight">
                 <di><b><h2>Study material</h2></b></di>
                 <a style="color: rgb(214, 214, 214);" href="#">ContactUs for query!</a>
-                <br><br><br>
-                <div>&#169; Corporate 2024.all rights received </div>
+                <br><br>
+                <div>&#169; Corporate 2024.all rights received </div><br>
+                <p>social media pages</p>
+                <a class="social_media_icons" href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a class="social_media_icons" href="#"><i class="fa-brands fa-telegram"></i></a>
+                <a class="social_media_icons" href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a class="social_media_icons" href="#"><i class="fa-brands fa-x-twitter"></i></a>
             </div>
         </footer>
     </div>
