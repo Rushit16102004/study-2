@@ -208,48 +208,48 @@ document.addEventListener("click",e => {
 });
 
 //dark mode//
-function darkModeON() {
-    let premode = 'light';
-    if(premode === 'light') {
-        var mainContainer = document.querySelector('.all');
-        mainContainer.classList.toggle("dark-mode");
+// function darkModeON() {
+//     let premode = 'light';
+//     if(premode === 'light') {
+//         var mainContainer = document.querySelector('.all');
+//         mainContainer.classList.toggle("dark-mode");
         
-        document.querySelectorAll("body").forEach((body) => {
-            body.classList.toggle('dark-mode');
-        });
-        document.querySelectorAll("h1").forEach((h1) => {
-            h1.classList.toggle('dark-mode');
-        });
-        document.querySelectorAll(".brings").forEach((brings) => {
-            brings.classList.toggle('dark-mode-brings_serveLink');
-        });
-        document.querySelectorAll(".serveLink").forEach((serveLink) => {
-            serveLink.classList.toggle('dark-mode-brings_serveLink');
-        });
-        document.querySelectorAll(".col-BackColor").forEach((col_BackColor) => {
-            col_BackColor.classList.toggle('dark-mode-col-BackColor');
-        });
-        document.querySelectorAll(".col11").forEach((col11) => {
-            col11.classList.toggle('dark-mode-col-1-11-21');
-        });
-        document.querySelectorAll(".col21").forEach((col21) => {
-            col21.classList.toggle('dark-mode-col-1-11-21');
-        });
-        document.querySelectorAll(".col1").forEach((col1) => {
-            col1.classList.toggle('dark-mode-col-1-11-21');
-        });
-        document.querySelectorAll("pre").forEach((pre) => {
-            pre.classList.toggle('dark-mode-pre');
-        });
-        document.querySelectorAll(".col2").forEach((col2) => {
-            col2.classList.toggle('dark-mode-col-1-11-21');
-        });
-        document.querySelectorAll(".col31").forEach((col31) => {
-            col31.classList.toggle('dark-mode-col-1-11-21');
-        });
-    }
-    premode = 'dark';
-}
+//         document.querySelectorAll("body").forEach((body) => {
+//             body.classList.toggle('dark-mode');
+//         });
+//         document.querySelectorAll("h1").forEach((h1) => {
+//             h1.classList.toggle('dark-mode');
+//         });
+//         document.querySelectorAll(".brings").forEach((brings) => {
+//             brings.classList.toggle('dark-mode-brings_serveLink');
+//         });
+//         document.querySelectorAll(".serveLink").forEach((serveLink) => {
+//             serveLink.classList.toggle('dark-mode-brings_serveLink');
+//         });
+//         document.querySelectorAll(".col-BackColor").forEach((col_BackColor) => {
+//             col_BackColor.classList.toggle('dark-mode-col-BackColor');
+//         });
+//         document.querySelectorAll(".col11").forEach((col11) => {
+//             col11.classList.toggle('dark-mode-col-1-11-21');
+//         });
+//         document.querySelectorAll(".col21").forEach((col21) => {
+//             col21.classList.toggle('dark-mode-col-1-11-21');
+//         });
+//         document.querySelectorAll(".col1").forEach((col1) => {
+//             col1.classList.toggle('dark-mode-col-1-11-21');
+//         });
+//         document.querySelectorAll("pre").forEach((pre) => {
+//             pre.classList.toggle('dark-mode-pre');
+//         });
+//         document.querySelectorAll(".col2").forEach((col2) => {
+//             col2.classList.toggle('dark-mode-col-1-11-21');
+//         });
+//         document.querySelectorAll(".col31").forEach((col31) => {
+//             col31.classList.toggle('dark-mode-col-1-11-21');
+//         });
+//     }
+//     premode = 'dark';
+// }
 
 // error ppage
 const resultsBox = document.querySelector(".result-box");

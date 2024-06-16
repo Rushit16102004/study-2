@@ -55,7 +55,7 @@ h1 {
 }
 h3 {
     font-size: 2.2rem;
-    text-align: center;
+    margin-left: 40%;
 }
 p {
     font-size: 1.3rem;
@@ -370,6 +370,9 @@ nav .hideOnMObile:hover {
     border:none;
     border-radius: 40px 0px;
 }
+.serveLink > .links > h3 {
+    margin-left: 0%;
+}
 
 .backImg {
     height: auto;
@@ -484,6 +487,9 @@ td, th {
     justify-content: space-evenly;
     gap: 3rem;
     text-align: center;
+}
+#mainBookBody > h3 {
+    margin-left: 0%;
 }
 
 .booksContainer {
@@ -618,6 +624,7 @@ td, th {
     z-index: 200;
     width: 100%;
     height: auto;
+    margin-bottom: 50px;
 }
 
 .sem-choices-container > ul {
@@ -799,19 +806,21 @@ input[type=checkbox].pristine, input[type=checkbox].pristine:before {
 }
 /* end darkbutton */
 
+/* dark mode */
 .dark-mode {
-    background:linear-gradient(#393646, #4F4557,#6D5D6E);
+    background-color: #000000e6;
     color: #EDEDED;
 }
 .dark-mode-brings_serveLink {
-    background: linear-gradient(180deg,#2d2d3f,#7b7b82,#8b8b8b);
+    background-color: #000000e6;
     color: #EDEDED;
 }
 .dark-mode-col-BackColor {
-    background-color: rgb(136, 136, 136);
+    background-color: #000000b6;
     color: #EDEDED;
 }
-.dark-mode-col-1-11-21, .dark-mode-pre {
+.dark-mode-col-1-11-21 {
+    background-color: #000000e2;
     color: #EDEDED;
 }
 /* end dark mode */
@@ -1041,3 +1050,9 @@ input[type=checkbox].pristine, input[type=checkbox].pristine:before {
     }
 }   
 /* end review-container */
+
+#telegram_img {
+    padding-left: 550px;
+    width: 350px;
+    height: 150px;
+}
