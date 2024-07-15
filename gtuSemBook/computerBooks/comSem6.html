@@ -14,7 +14,7 @@
             <nav class="nav-container">
                 <ul class="slidebar">
                     <li  onclick = hideSlidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                    <li><input onclick = darkModeON() class="pristine hideOnMObile" type="checkbox" name="toggle" value="on"></li>
+                    <!-- <li><input onclick = darkModeON() class="pristine hideOnMObile" type="checkbox" name="toggle" value="on"></li> -->
                     <li><a href="/index.html">Home </a></li>
                     <li><a href="/old_paper.html">GTU Old Paper</a></li>
                     <li><a href="/GTU_Syllabus.html">Syllabus</a></li>
@@ -22,6 +22,7 @@
                 </ul>
                 <ul class="topbar">
                     <li class="nav-back" onclick = Go_back()><a><i class="fa-solid fa-arrow-left"></i></a></li>
+                    <li><img id="logo" src="/photos/logo.png"></li>
                     <li class="hideOnMObile"><a href="/index.html"> Home</a></li>
                         <li class="hideOnMObile Menu">
                             <a onmousemove = display_oldpaper_branch() href="#"><pre>GTU  Old Paper  <i class="fa-solid fa-caret-down"></i></pre></a>
@@ -38,7 +39,7 @@
                         </li>
                     <li class="hideOnMObile"><a href="/GTU_Syllabus.html">Syllabus</a></li>
                     <li class="hideOnMObile"><a href="/GTU_books.html">Study Material </a></li>
-                    <li><input onclick = darkModeON() class="pristine hideOnMObile" type="checkbox" name="toggle" value="on"></li>
+                    <!-- <li><input onclick = darkModeON() class="pristine hideOnMObile" type="checkbox" name="toggle" value="on"></li> -->
                     <li onclick = showSlidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                 </ul>
             </nav>
@@ -48,76 +49,82 @@
             <br><h1>GTU CE/IT SEM 6 Books & Study Material</h1>
             <p>Here you can see a collection of GTU CE/IT SEM 6 All Books & Study Material and study materials related to the CS/IT program offered by Gujarat Technological University (GTU) in India. Specifically, the collection is focused on the 6th semester of the program. GTU CE/IT SEM 6 All Books & Study Material.</p>
             <h3>Technical Publication All Books PDF</h3>
+
             <div class="booksContainer">
+
                 <div class="books">
-                    <div class="book"></div>
+                    <div class="book"><img src="/gtuSemBook/All-photo/Computer Branch photo/sem 6/toc.jpeg"></div>
                     <div class="subName">
                         Theory Of Computation (3160704)
                     </div>
-                    <!-- <button class="button" type="button">Download</button> -->
-                    <button class="button" type="button">Download</button>
-
+                    <a href="/gtuSemBook/All-pdf/Computer Branch pdf/sem 6/Theory of Computation (3160704).pdf"><button class="button">Download</button></a>
                 </div>
 
                 <div class="books">
-                    <div class="book"></div>
+                    <div class="book"><img src="/gtuSemBook/All-photo/Computer Branch photo/sem 6/Advance-Java-Programming.webp"></div>
                     <div class="subName">
                         Advanced Java Programming (3160707)
                     </div>
-                    <button class="button">Download</button>
+                    <a href="/gtuSemBook/All-pdf/Computer Branch pdf/sem 6/Advanced Java Programming (3160707).pdf"><button class="button">Download</button></a>
                 </div>
                 
                 <div class="books">
-                    <div class="book"></div>
-                <div class="subName">
+                    <div class="book"><img src="/gtuSemBook/All-photo/Computer Branch photo/sem 6/MPI.jpeg"></div>
+                    <div class="subName">
                     Microprocessor & Interfacing (3160712)
-                </div>
-                <button class="button">Download</button>
+                    </div>
+                    <a href="/gtuSemBook/All-pdf/Computer Branch pdf/sem 6/Microprocessor & Interfacing (3160712).pdf"><button class="button">Download</button></a>
                 </div>
 
                 <div class="books">
-                    <div class="book"></div>
-                <div class="subName">
+                    <div class="book"><img src="/gtuSemBook/All-photo/Computer Branch photo/sem 6/IOT.png"></div>
+                    <div class="subName">
                     IoT & Application (3160716)
-                </div>
-                <button class="button">Download</button>
+                    </div>
+                    <a href="/gtuSemBook/All-pdf/Computer Branch pdf/sem 6/3160716-IOT.pdf"><button class="button">Download</button></a>
                 </div>
 
                 <div class="books">
-                    <div class="book"></div>
-                <div class="subName">
+                    <div class="book"><img src="/gtuSemBook/All-photo/Computer Branch photo/sem 6/WP.jpg"></div>
+                    <div class="subName">
                     Web Programming (3160713)
+                    </div>
+                    <a href="/gtuSemBook/All-pdf/Computer Branch pdf/sem 6/WP Technical Book (3160713).pdf"><button class="button">Download</button></a>
                 </div>
-                <button class="button">Download</button>
-                </div>
-            
 
-            <div class="books">
-                    <div class="book"></div>
-                <div class="subName">
+                <div class="books">
+                    <div class="book"><img src="/gtuSemBook/All-photo/Computer Branch photo/sem 6/CPDP.jpg"></div>
+                    <div class="subName">
                     CPDP (3160002)
-                </div>
-                <button class="button">Download</button>
+                    </div>
+                    <a href="/gtuSemBook/All-pdf/Computer Branch pdf/sem 6/3160002-CPDP.pdf"><button class="button">Download</button></a>
                 </div>
                 
-            <div class="books">
-                <div class="book"></div>
-            <div class="subName">
-                Data Mining (3160714)
-            </div>
-            <button class="button">Download</button>
-            </div>
+                <div class="books">
+                    <div class="book"><img src="/gtuSemBook/All-photo/Computer Branch photo/sem 6/Data-Mining.jpg"></div>
+                    <div class="subName">
+                    Data Mining (3160714)
+                    </div>
+                    <a href="/gtuSemBook/All-pdf/Computer Branch pdf/sem 6/3160714-DM.pdf"><button class="button">Download</button></a>
+                </div>
 
+                <div class="books">
+                    <div class="book"><img src="/gtuSemBook/All-photo/Computer Branch photo/sem 6/DV-220x300.jpg"></div>
+                    <div class="subName">
+                    Data Visualization (3160717)
+                    </div>
+                    <a href="/gtuSemBook/All-pdf/Computer Branch pdf/sem 6/3160717-DV.pdf"><button class="button">Download</button></a>
+                </div>
+        
             <div class="books">
-                <div class="book"></div>
-            <div class="subName">
-                Data Visualization (3160717)
+                <div class="book"><img src="/gtuSemBook/All-photo/Computer Branch photo/sem 6/ss.jpg"></div>
+                <div class="subName">
+                System Software (3160715)
+                </div>
+                <a href="/gtuSemBook/All-pdf/Computer Branch pdf/sem 6/(3160715)-SS.pdf"><button class="button">Download</button></a>
             </div>
-            <button class="button">Download</button>
-            </div>
+                
         </div>
-
-    </div>
 
             <h3>Darshan Study Material</h3>
 

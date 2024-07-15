@@ -14,7 +14,7 @@
             <nav class="nav-container">
                 <ul class="slidebar">
                     <li  onclick = hideSlidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                    <li><input onclick = darkModeON() class="pristine hideOnMObile" type="checkbox" name="toggle" value="on"></li>
+                    <!-- <li><input onclick = darkModeON() class="pristine hideOnMObile" type="checkbox" name="toggle" value="on"></li> -->
                     <li><a href="/index.html">Home </a></li>
                     <li><a href="/old_paper.html">GTU Old Paper</a></li>
                     <li><a href="/GTU_Syllabus.html">Syllabus</a></li>
@@ -22,6 +22,7 @@
                 </ul>
                 <ul class="topbar">
                     <li class="nav-back" onclick = Go_back()><a><i class="fa-solid fa-arrow-left"></i></a></li>
+                    <li><img id="logo" src="/photos/logo.png"></li>
                     <li class="hideOnMObile"><a href="/index.html"> Home</a></li>
                         <li class="hideOnMObile Menu">
                             <a onmousemove = display_oldpaper_branch() href="#"><pre>GTU  Old Paper  <i class="fa-solid fa-caret-down"></i></pre></a>
@@ -38,7 +39,7 @@
                         </li>
                     <li class="hideOnMObile"><a href="/GTU_Syllabus.html">Syllabus</a></li>
                     <li class="hideOnMObile"><a href="/GTU_books.html">Study Material </a></li>
-                    <li><input onclick = darkModeON() class="pristine hideOnMObile" type="checkbox" name="toggle" value="on"></li>
+                    <!-- <li><input onclick = darkModeON() class="pristine hideOnMObile" type="checkbox" name="toggle" value="on"></li> -->
                     <li onclick = showSlidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                 </ul>
             </nav>
@@ -51,54 +52,53 @@
             </div>
             <h3>Technical Publication All Books PDF</h3>
             <div class="booksContainer">
+
                 <div class="books">
-                    <div class="book"></div>
+                    <div class="book"><img src="/gtuSemBook/All-photo/Computer Branch photo/sem 3/DS.png"></div>
                     <div class="subName">
                         Data Structure (3130702)
                     </div>
-                    <!-- <button class="button" type="button">Download</button> -->
-                    <button class="button" type="button">Download</button>
-
+                    <a href="/gtuSemBook/All-pdf/Computer Branch pdf/sem 3/Data Structure (3130702).pdf"><button class="button">Download</button></a>
                 </div>
 
                 <div class="books">
-                    <div class="book"></div>
+                    <div class="book"><img src="/gtuSemBook/All-photo/Computer Branch photo/sem 3/DF.jpg"></div>
                     <div class="subName">
                         Digital Fundamentals (3130704)
                     </div>
-                    <button class="button">Download</button>
+                    <a href="/gtuSemBook/All-pdf/Computer Branch pdf/sem 3/Digital Fundamental (3130704).pdf"><button class="button">Download</button></a>
                 </div>
                 
                 <div class="books">
-                    <div class="book"></div>
+                    <div class="book"><img src="/gtuSemBook/All-photo/Computer Branch photo/sem 3/DBMS.png"></div>
                 <div class="subName">
                     Database Management System (3130703)
                 </div>
-                <button class="button">Download</button>
+                <a href="/gtuSemBook/All-pdf/Computer Branch pdf/sem 3/Databse Managment System (313703).pdf"><button class="button">Download</button></a>
                 </div>
 
                 <div class="books">
-                    <div class="book"></div>
+                    <div class="book"><img src="/gtuSemBook/All-photo/Computer Branch photo/sem 3/PS.jpeg"></div>
                 <div class="subName">
                     Probability & Statistics (3130006)
                 </div>
-                <button class="button">Download</button>
+                <a href="/gtuSemBook/All-pdf/Computer Branch pdf/sem 3/Probability And Statics (3130006).pdf"><button class="button">Download</button></a>
                 </div>
 
                 <div class="books">
-                    <div class="book"></div>
+                    <div class="book"><img src="/gtuSemBook/All-photo/Computer Branch photo/sem 3/ETC-227x300.png"></div>
                 <div class="subName">
                     Effective Technical Communication (3130004)
                 </div>
-                <button class="button">Download</button>
+                <a href="/gtuSemBook/All-pdf/Computer Branch pdf/sem 3/Digital Fundamental (3130704).pdf"><button class="button">Download</button></a>
                 </div>
 
                 <div class="books">
-                    <div class="book"></div>
+                    <div class="book"><img src="/gtuSemBook/All-photo/Computer Branch photo/sem 3/IC-220x300.jpeg"></div>
                 <div class="subName">
                     Indian Constitution (3130007)
                 </div>
-                <button class="button">Download</button>
+                <a href="/gtuSemBook/All-pdf/Computer Branch pdf/sem 3/Indian Constitution (3130007).pdf"><button class="button">Download</button></a>
                 </div>
             </div>
 
@@ -159,5 +159,6 @@
         </footer>
         <script src="/all.js"></script>
     </div>
+
 </body>
 </html>

@@ -34,169 +34,45 @@ function hide_sub_Menu() {
     topbar.style.display = 'flex';    
 }
 
-function sem_1and2(){
-    const sem_1_and_2 = document.querySelector('.sem_1_and_2');
-    sem_1_and_2.style.display = 'flex';
-    const sem_3 = document.querySelector('.sem_3');
-    sem_3.style.display = 'none';
-    const sem_4= document.querySelector('.sem_4');
-    sem_4.style.display = 'none';
-    const sem_5 = document.querySelector('.sem_5');
-    sem_5.style.display = 'none';
-    const sem_6 = document.querySelector('.sem_6');
-    sem_6.style.display = 'none';
-    const sem_7 = document.querySelector('.sem_7');
-    sem_7.style.display = 'none';
-    
-    const sem1_2 = document.querySelector('.sem1_2');
-    sem1_2.style.backgroundColor = 'black';
-    const sem3 = document.querySelector('.sem3');
-    sem3.style.backgroundColor = null;
-    const sem4= document.querySelector('.sem4');
-    sem4.style.backgroundColor = null;
-    const sem5 = document.querySelector('.sem5');
-    sem5.style.backgroundColor = null;
-    const sem6 = document.querySelector('.sem6');
-    sem6.style.backgroundColor = null;
-    const sem7 = document.querySelector('.sem7');
-    sem7.style.backgroundColor = null;
+function toggleSemesterDisplay(activeSemester, activeTab) {
+    const semesters = ['.sem_1_and_2', '.sem_3', '.sem_4', '.sem_5', '.sem_6', '.sem_7'];
+    const tabs = ['.sem1_2', '.sem3', '.sem4', '.sem5', '.sem6', '.sem7'];
+
+    semesters.forEach((semester, index) => {
+        const semesterElement = document.querySelector(semester);
+        semesterElement.style.display = (semester === activeSemester) ? 'flex' : 'none';
+    });
+
+    tabs.forEach((tab, index) => {
+        const tabElement = document.querySelector(tab);
+        tabElement.style.backgroundColor = (tab === activeTab) ? 'black' : null;
+    });
 }
 
-function sem_3(){
-    const sem_1_and_2 = document.querySelector('.sem_1_and_2');
-    sem_1_and_2.style.display = 'none';
-    const sem_3 = document.querySelector('.sem_3');
-    sem_3.style.display = 'flex';
-    const sem_4= document.querySelector('.sem_4');
-    sem_4.style.display = 'none';
-    const sem_5 = document.querySelector('.sem_5');
-    sem_5.style.display = 'none';
-    const sem_6 = document.querySelector('.sem_6');
-    sem_6.style.display = 'none';
-    const sem_7 = document.querySelector('.sem_7');
-    sem_7.style.display = 'none';
-    
-    const sem1_2 = document.querySelector('.sem1_2');
-    sem1_2.style.backgroundColor = null;
-    const sem3 = document.querySelector('.sem3');
-    sem3.style.backgroundColor = 'black';
-    const sem4= document.querySelector('.sem4');
-    sem4.style.backgroundColor = null;
-    const sem5 = document.querySelector('.sem5');
-    sem5.style.backgroundColor = null;
-    const sem6 = document.querySelector('.sem6');
-    sem6.style.backgroundColor = null;
-    const sem7 = document.querySelector('.sem7');
-    sem7.style.backgroundColor = null;
+function sem_1and2() {
+    toggleSemesterDisplay('.sem_1_and_2', '.sem1_2');
 }
+
+function sem_3() {
+    toggleSemesterDisplay('.sem_3', '.sem3');
+}
+
 function sem_4() {
-    const sem_1_and_2 = document.querySelector('.sem_1_and_2');
-    sem_1_and_2.style.display = 'none';
-    const sem_3 = document.querySelector('.sem_3');
-    sem_3.style.display = 'none';
-    const sem_4= document.querySelector('.sem_4');
-    sem_4.style.display = 'flex';
-    const sem_5 = document.querySelector('.sem_5');
-    sem_5.style.display = 'none';
-    const sem_6 = document.querySelector('.sem_6');
-    sem_6.style.display = 'none';
-    const sem_7 = document.querySelector('.sem_7');
-    sem_7.style.display = 'none';
-
-    const sem1_2 = document.querySelector('.sem1_2');
-    sem1_2.style.backgroundColor = null;
-    const sem3 = document.querySelector('.sem3');
-    sem3.style.backgroundColor = null;
-    const sem4= document.querySelector('.sem4');
-    sem4.style.backgroundColor = 'black';
-    const sem5 = document.querySelector('.sem5');
-    sem5.style.backgroundColor = null;
-    const sem6 = document.querySelector('.sem6');
-    sem6.style.backgroundColor = null;
-    const sem7 = document.querySelector('.sem7');
-    sem7.style.backgroundColor = null;
+    toggleSemesterDisplay('.sem_4', '.sem4');
 }
+
 function sem_5() {
-    const sem_1_and_2 = document.querySelector('.sem_1_and_2');
-    sem_1_and_2.style.display = 'none';
-    const sem_3 = document.querySelector('.sem_3');
-    sem_3.style.display = 'none';
-    const sem_4= document.querySelector('.sem_4');
-    sem_4.style.display = 'none';
-    const sem_5 = document.querySelector('.sem_5');
-    sem_5.style.display = 'flex';
-    const sem_6 = document.querySelector('.sem_6');
-    sem_6.style.display = 'none';
-    const sem_7 = document.querySelector('.sem_7');
-    sem_7.style.display = 'none';
-
-    const sem1_2 = document.querySelector('.sem1_2');
-    sem1_2.style.backgroundColor = null;
-    const sem3 = document.querySelector('.sem3');
-    sem3.style.backgroundColor = null;
-    const sem4= document.querySelector('.sem4');
-    sem4.style.backgroundColor = null;
-    const sem5 = document.querySelector('.sem5');
-    sem5.style.backgroundColor = 'black';
-    const sem6 = document.querySelector('.sem6');
-    sem6.style.backgroundColor = null;
-    const sem7 = document.querySelector('.sem7');
-    sem7.style.backgroundColor = null;
+    toggleSemesterDisplay('.sem_5', '.sem5');
 }
+
 function sem_6() {
-    const sem_1_and_2 = document.querySelector('.sem_1_and_2');
-    sem_1_and_2.style.display = 'none';
-    const sem_3 = document.querySelector('.sem_3');
-    sem_3.style.display = 'none';
-    const sem_4= document.querySelector('.sem_4');
-    sem_4.style.display = 'none';
-    const sem_5 = document.querySelector('.sem_5');
-    sem_5.style.display = 'none';
-    const sem_6 = document.querySelector('.sem_6');
-    sem_6.style.display = 'flex';
-    const sem_7 = document.querySelector('.sem_7');
-    sem_7.style.display = 'none';
-
-    const sem1_2 = document.querySelector('.sem1_2');
-    sem1_2.style.backgroundColor = null;
-    const sem3 = document.querySelector('.sem3');
-    sem3.style.backgroundColor = null;
-    const sem4= document.querySelector('.sem4');
-    sem4.style.backgroundColor = null;
-    const sem5 = document.querySelector('.sem5');
-    sem5.style.backgroundColor = null;
-    const sem6 = document.querySelector('.sem6');
-    sem6.style.backgroundColor = 'black';
-    const sem7 = document.querySelector('.sem7');
-    sem7.style.backgroundColor = null;
+    toggleSemesterDisplay('.sem_6', '.sem6');
 }
+
 function sem_7() {
-    const sem_1_and_2 = document.querySelector('.sem_1_and_2');
-    sem_1_and_2.style.display = 'none';
-    const sem_3 = document.querySelector('.sem_3');
-    sem_3.style.display = 'none';
-    const sem_4 = document.querySelector('.sem_4');
-    sem_4.style.display = 'none';
-    const sem_5 = document.querySelector('.sem_5');
-    sem_5.style.display = 'none';
-    const sem_6 = document.querySelector('.sem_6');
-    sem_6.style.display = 'none';
-    const sem_7 = document.querySelector('.sem_7');
-    sem_7.style.display = 'flex';
-
-    const sem1_2 = document.querySelector('.sem1_2');
-    sem1_2.style.backgroundColor = null;
-    const sem3 = document.querySelector('.sem3');
-    sem3.style.backgroundColor = null;
-    const sem4= document.querySelector('.sem4');
-    sem4.style.backgroundColor = null;
-    const sem5 = document.querySelector('.sem5');
-    sem5.style.backgroundColor = null;
-    const sem6 = document.querySelector('.sem6');
-    sem6.style.backgroundColor = null;
-    const sem7 = document.querySelector('.sem7');
-    sem7.style.backgroundColor = 'black';
+    toggleSemesterDisplay('.sem_7', '.sem7');
 }
+
 function Go_back() {
     window.history.back(-1);
 }
@@ -209,85 +85,83 @@ document.addEventListener("click",e => {
 
 //dark mode//
 // function darkModeON() {
-//     let premode = 'light';
-//     if(premode === 'light') {
-//         var mainContainer = document.querySelector('.all');
-//         mainContainer.classList.toggle("dark-mode");
-        
-//         document.querySelectorAll("body").forEach((body) => {
-//             body.classList.toggle('dark-mode');
+//     const elementsToToggle = [
+//         '.all', 'body', 'h1', '.brings', '.serveLink', '.col-BackColor', 
+//         '.col11', '.col21', '.col1', 'pre', '.col2', '.col31'
+//     ];
+
+//     elementsToToggle.forEach(selector => {
+//         document.querySelectorAll(selector).forEach(element => {
+//             element.classList.toggle('dark-mode');
 //         });
-//         document.querySelectorAll("h1").forEach((h1) => {
-//             h1.classList.toggle('dark-mode');
-//         });
-//         document.querySelectorAll(".brings").forEach((brings) => {
-//             brings.classList.toggle('dark-mode-brings_serveLink');
-//         });
-//         document.querySelectorAll(".serveLink").forEach((serveLink) => {
-//             serveLink.classList.toggle('dark-mode-brings_serveLink');
-//         });
-//         document.querySelectorAll(".col-BackColor").forEach((col_BackColor) => {
-//             col_BackColor.classList.toggle('dark-mode-col-BackColor');
-//         });
-//         document.querySelectorAll(".col11").forEach((col11) => {
-//             col11.classList.toggle('dark-mode-col-1-11-21');
-//         });
-//         document.querySelectorAll(".col21").forEach((col21) => {
-//             col21.classList.toggle('dark-mode-col-1-11-21');
-//         });
-//         document.querySelectorAll(".col1").forEach((col1) => {
-//             col1.classList.toggle('dark-mode-col-1-11-21');
-//         });
-//         document.querySelectorAll("pre").forEach((pre) => {
-//             pre.classList.toggle('dark-mode-pre');
-//         });
-//         document.querySelectorAll(".col2").forEach((col2) => {
-//             col2.classList.toggle('dark-mode-col-1-11-21');
-//         });
-//         document.querySelectorAll(".col31").forEach((col31) => {
-//             col31.classList.toggle('dark-mode-col-1-11-21');
-//         });
-//     }
-//     premode = 'dark';
+//     });
 // }
 
 // error ppage
 const resultsBox = document.querySelector(".result-box");
-    const inputBox = document.getElementById("input-box");
+const inputBox = document.getElementById("input-box");
 
-    const links = [
-    {
-        href: "www.example.com/faqs",
-        text: "Frequently asked questions",
-    },
-    {
-        href: "www.example.com/blog/article",
-        text: "Article Title",
-    },
-    {
-        href: "www.example.com/contact",
-        text: "Contact",
-    },
-    ];
+const links = [
+    { href: "www.example.com/faqs", text: "Frequently asked questions" },
+    { href: "www.example.com/blog/article", text: "Article Title" },
+    { href: "www.example.com/contact", text: "Contact" },
+];
 
-    inputBox.onkeyup = function () {
-        let result = [];
-        let input = inputBox.value;
-        if (input.length) {
-        result = links.filter((link) => {
-            return link.text.toLowerCase().includes(input.toLowerCase());
-        });
-    }
+inputBox.addEventListener("keyup", () => {
+    const input = inputBox.value.toLowerCase();
+    const result = input.length ? links.filter(link => link.text.toLowerCase().includes(input)) : [];
     display(result);
-    }
-    function display(result) {
-        if (result.length) {
-        const content = result.map((list, index) => {
-        const href = list.href;
-        return `<li><a href="${href}">${list.text}</a></li>`;
-    });
-    resultsBox.innerHTML = `<ul>${content.join('')}</ul>`;
-} else {
-    resultsBox.innerHTML = '';
+});
+
+function display(result) {
+    resultsBox.innerHTML = result.length ? `<ul>${result.map(link => `<li><a href="${link.href}">${link.text}</a></li>`).join('')}</ul>` : '';
 }
+
+// review area
+document.addEventListener("DOMContentLoaded", function() {
+    var loadingBar = document.getElementById('loadingBar');
+    loadingBar.style.width = "100%"; // Start loading
+
+    window.addEventListener('load', function() {
+        loadingBar.style.width = "0"; // Hide after page load
+    });
+});
+function submitReview() {
+    var review = document.getElementById('reviewInput').value;
+    if (review) {
+        document.getElementById('responseMessage').innerText = "Review submitted: " + review;
+        document.getElementById('reviewInput').value = ''; // Clear the input after submission
+    } else {
+        document.getElementById('responseMessage').innerText = "Please enter a review before submitting.";
+        document.getElementById('responseMessage').style.color = 'red';
+    }
+}
+
+// social media link
+const socialMedia = [
+    { name: 'Facebook', url: 'https://www.facebook.com', icon: 'fa-facebook' },
+    { name: 'Twitter', url: 'https://www.twitter.com', icon: 'fa-twitter' },
+    { name: 'Instagram', url: 'https://www.instagram.com', icon: 'fa-instagram' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com', icon: 'fa-linkedin' }
+];
+
+const container = document.querySelector('.social-media-links');
+
+socialMedia.forEach(media => {
+    const link = document.createElement('a');
+    link.href = media.url;
+    link.setAttribute('target', '_blank');
+    link.className = `social-link ${media.name.toLowerCase()}`;
+    link.innerHTML = `<i class="fa ${media.icon}"></i> ${media.name}`;
+    container.appendChild(link);
+});
+
+// sidebar social media link
+function toggleSidebar() {
+    var sidebar = document.getElementById("socialSidebar");
+    if (sidebar.style.width === "250px") {
+        sidebar.style.width = "0";
+    } else {
+        sidebar.style.width = "250px";
+    }
 }

@@ -13,7 +13,7 @@
             <nav class="nav-container">
                 <ul class="slidebar">
                     <li  onclick = hideSlidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                    <li><input onclick = darkModeON() class="pristine hideOnMObile" type="checkbox" name="toggle" value="on"></li>
+                    <!-- <li><input onclick = darkModeON() class="pristine hideOnMObile" type="checkbox" name="toggle" value="on"></li> -->
                     <li><a href="/index.html">Home </a></li>
                     <li><a href="/old_paper.html">GTU Old Paper</a></li>
                     <li><a href="/GTU_Syllabus.html">Syllabus</a></li>
@@ -21,6 +21,7 @@
                 </ul>
                 <ul class="topbar">
                     <li class="nav-back" onclick = Go_back()><a><i class="fa-solid fa-arrow-left"></i></a></li>
+                    <li><img id="logo" src="/photos/logo.png"></li>
                     <li class="hideOnMObile"><a href="/index.html"> Home</a></li>
                         <li class="hideOnMObile Menu">
                             <a onmousemove = display_oldpaper_branch() href="#"><pre>GTU  Old Paper  <i class="fa-solid fa-caret-down"></i></pre></a>
@@ -37,7 +38,7 @@
                         </li>
                     <li class="hideOnMObile"><a href="/GTU_Syllabus.html">Syllabus</a></li>
                     <li class="hideOnMObile"><a href="/GTU_books.html">Study Material </a></li>
-                    <li><input onclick = darkModeON() class="pristine hideOnMObile" type="checkbox" name="toggle" value="on"></li>
+                    <!-- <li><input onclick = darkModeON() class="pristine hideOnMObile" type="checkbox" name="toggle" value="on"></li> -->
                     <li onclick = showSlidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
                 </ul>
             </nav>
@@ -47,45 +48,46 @@
             <p>Here you can see a collection of GTU CE/IT SEM 4 All Books & Study Material and study materials related to the CS/IT program offered by Gujarat Technological University (GTU) in India. Specifically, the collection is focused on the 4th semester of the program. GTU CE/IT SEM 4 All Books & Study Material.</p>
             <h3>Technical Publication All Books PDF</h3>
             <div class="booksContainer">
-                <div class="books">
-                    <div class="book"></div>
-                    <div class="subName">
-                        Discrete Mathematics (3140708)
-                    </div>
-                    <!-- <button class="button" type="button">Download</button> -->
-                    <button class="button" type="button">Download</button>
-                </div>
-                <div class="books">
-                    <div class="book"></div>
-                    <div class="subName">
-                        Object Oriented Programming-1 (3140705)
-                    </div>
-                    <button class="button">Download</button>
-                </div>
-                <div class="books">
-                    <div class="book"></div>
-                <div class="subName">
-                    Operating System (3140702)
-                </div>
-                <button class="button">Download</button>
-                </div>
-                <div class="books">
-                    <div class="book"></div>
-                <div class="subName">
-                    Computer Organization And Architecture(3140707)
-                </div>
-                <button class="button">Download</button>
-                </div>
                 
-                <div class="books">
-                    <div class="book">
-                </div>
-                <div class="subName">
-                    Priciple Of Economics And Managment(3140709)   
-                </div>
-                <button class="button">Download</button>
+                <div class="booksContainer">
+                    <div class="books">
+                        <div class="book"><img src="/gtuSemBook/All-photo/Computer Branch photo/sem 4/DM.jpg"></div>
+                        <div class="subName">
+                            Discrete Mathematics (3140708)
+                        </div>
+                        <a href="/gtuSemBook/All-pdf/Computer Branch pdf/sem 4/3140708-DM.pdf"><button class="button">Download</button></a>
+                    </div>
+                    <div class="books">
+                        <div class="book"><img src="/gtuSemBook/All-photo/Computer Branch photo/sem 4/OOP.jpg"></div>
+                        <div class="subName">
+                        Object Oriented Programming-1 (3140705)
+                        </div>
+                        <a href="/gtuSemBook/All-pdf/Computer Branch pdf/sem 4/3140705-OOP1.pdf"><button class="button">Download</button></a>
+                    </div>
+                    <div class="books">
+                        <div class="book"><img src="/gtuSemBook/All-photo/Computer Branch photo/sem 4/OS.jpg"></div>
+                        <div class="subName">
+                        Operating System (3140702)
+                        </div>
+                        <a href="/gtuSemBook/All-pdf/Computer Branch pdf/sem 4/3140702-OS.pdf"><button class="button">Download</button></a>
+                    </div>
+                    <div class="books">
+                        <div class="book"><img src="/gtuSemBook/All-photo/Computer Branch photo/sem 4/COA.jpg"></div>
+                        <div class="subName">
+                        Computer Organization And Architecture(3140707)
+                        </div>
+                        <a href="/gtuSemBook/All-pdf/Computer Branch pdf/sem 4/3140707-COA.pdf"><button class="button">Download</button></a>
+                    </div>
+                    <div class="books">
+                        <div class="book"><img src="/gtuSemBook/All-photo/Computer Branch photo/sem 4/PEM.jpg"></div>
+                        <div class="subName">
+                        Priciple Of Economics And Managment(3140709)   
+                        </div>
+                        <a href="/gtuSemBook/All-pdf/Computer Branch pdf/sem 4/3140709-PEM.pdf"><button class="button">Download</button></a>
+                    </div>
                 </div>
             </div>
+
             <h3>Darshan Study Material</h3>
             <table class="table">
                 <tr>
@@ -96,7 +98,7 @@
                 <tr>
                     <td class="col1"> 1 </td>
                     <td class="col2"> Discrete Mathematics </td>
-                    <td class="col3"><a class="col31" href="#">Download</a></td>
+                    <td class="col3"><a class="col31" href="/gtuSemBook/All-pdf/Computer Branch pdf/sem 4/darshan pdf.pdf">Download</a></td>
                 </tr>
                 <tr>
                     <td class="col1"> 2 </td>
