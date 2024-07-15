@@ -3,7 +3,8 @@ function showSlidebar(){
     slidebar.style.display = 'flex';
     const topbar = document.querySelector('.topbar');
     topbar.style.display = 'none';
-
+    const review_img = document.querySelectorAll('.review_img');
+    review_img.style.display = 'none'
 }
 function hideSlidebar(){
     const slidebar = document.querySelector('.slidebar');
@@ -26,7 +27,11 @@ function display_studymaterial_branch() {
 
 function hide_sub_Menu() {
     const oldpaper_sub_Menu = document.querySelector('.oldpaper_sub_Menu');
-    oldpaper_sub_Menu.style.display = 'none';      
+    oldpaper_sub_Menu.style.display = 'none';  
+    const slidebar = document.querySelector('.slidebar');
+    slidebar.style.display = 'none';
+    const topbar = document.querySelector('.topbar');
+    topbar.style.display = 'flex';    
 }
 
 function sem_1and2(){
@@ -203,28 +208,86 @@ document.addEventListener("click",e => {
 });
 
 //dark mode//
-function darkModeON() {
-    var mainContainer = document.querySelector('.all');
-    mainContainer.classList.toggle("dark-mode");
-    document.querySelectorAll("body").forEach((body) => {
-        body.classList.toggle('dark-mode');
+// function darkModeON() {
+//     let premode = 'light';
+//     if(premode === 'light') {
+//         var mainContainer = document.querySelector('.all');
+//         mainContainer.classList.toggle("dark-mode");
+        
+//         document.querySelectorAll("body").forEach((body) => {
+//             body.classList.toggle('dark-mode');
+//         });
+//         document.querySelectorAll("h1").forEach((h1) => {
+//             h1.classList.toggle('dark-mode');
+//         });
+//         document.querySelectorAll(".brings").forEach((brings) => {
+//             brings.classList.toggle('dark-mode-brings_serveLink');
+//         });
+//         document.querySelectorAll(".serveLink").forEach((serveLink) => {
+//             serveLink.classList.toggle('dark-mode-brings_serveLink');
+//         });
+//         document.querySelectorAll(".col-BackColor").forEach((col_BackColor) => {
+//             col_BackColor.classList.toggle('dark-mode-col-BackColor');
+//         });
+//         document.querySelectorAll(".col11").forEach((col11) => {
+//             col11.classList.toggle('dark-mode-col-1-11-21');
+//         });
+//         document.querySelectorAll(".col21").forEach((col21) => {
+//             col21.classList.toggle('dark-mode-col-1-11-21');
+//         });
+//         document.querySelectorAll(".col1").forEach((col1) => {
+//             col1.classList.toggle('dark-mode-col-1-11-21');
+//         });
+//         document.querySelectorAll("pre").forEach((pre) => {
+//             pre.classList.toggle('dark-mode-pre');
+//         });
+//         document.querySelectorAll(".col2").forEach((col2) => {
+//             col2.classList.toggle('dark-mode-col-1-11-21');
+//         });
+//         document.querySelectorAll(".col31").forEach((col31) => {
+//             col31.classList.toggle('dark-mode-col-1-11-21');
+//         });
+//     }
+//     premode = 'dark';
+// }
+
+// error ppage
+const resultsBox = document.querySelector(".result-box");
+    const inputBox = document.getElementById("input-box");
+
+    const links = [
+    {
+        href: "www.example.com/faqs",
+        text: "Frequently asked questions",
+    },
+    {
+        href: "www.example.com/blog/article",
+        text: "Article Title",
+    },
+    {
+        href: "www.example.com/contact",
+        text: "Contact",
+    },
+    ];
+
+    inputBox.onkeyup = function () {
+        let result = [];
+        let input = inputBox.value;
+        if (input.length) {
+        result = links.filter((link) => {
+            return link.text.toLowerCase().includes(input.toLowerCase());
+        });
+    }
+    display(result);
+    }
+    function display(result) {
+        if (result.length) {
+        const content = result.map((list, index) => {
+        const href = list.href;
+        return `<li><a href="${href}">${list.text}</a></li>`;
     });
-    document.querySelectorAll("h1").forEach((h1) => {
-        h1.classList.toggle('dark-mode');
-    });
-    document.querySelectorAll(".brings").forEach((brings) => {
-        brings.classList.toggle('dark-mode-brings_serveLink');
-    });
-    document.querySelectorAll(".serveLink").forEach((serveLink) => {
-        serveLink.classList.toggle('dark-mode-brings_serveLink');
-    });
-    document.querySelectorAll(".col-BackColor").forEach((col_BackColor) => {
-        col_BackColor.classList.toggle('dark-mode-col-BackColor');
-    });
-    document.querySelectorAll(".col11").forEach((col11) => {
-        col11.classList.toggle('dark-mode-col-11-21');
-    });
-    document.querySelectorAll(".col21").forEach((col21) => {
-        col21.classList.toggle('dark-mode-col-11-21');
-    });
+    resultsBox.innerHTML = `<ul>${content.join('')}</ul>`;
+} else {
+    resultsBox.innerHTML = '';
+}
 }

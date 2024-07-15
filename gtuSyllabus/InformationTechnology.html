@@ -12,6 +12,7 @@
         <nav>
             <ul class="slidebar">
                 <li  onclick = hideSlidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <!-- <li><input onclick = darkModeON() class="pristine" type="checkbox" name="toggle" value="on"></li> -->
                 <li><a href="/index.html">Home </a></li>
                 <li><a href="/old_paper.html">GTU Old Paper</a></li>
                 <li><a href="/GTU_Syllabus.html">Syllabus</a></li>
@@ -19,10 +20,12 @@
                 </ul>
             <ul class="topbar">
                 <li class="nav-back" onclick = Go_back()><a><i class="fa-solid fa-arrow-left"></i></a></li>
+                <li><img id="logo" src="/photos/logo.png"></li>
                 <li class="hideOnMObile"><a href="/index.html">Home </a></li>
                 <li class="hideOnMObile"><a href="/old_paper.html">GTU Old Paper</a></li>
                 <li class="hideOnMObile"><a href="/GTU_Syllabus.html">Syllabus</a></li>
                 <li class="hideOnMObile"><a href="/GTU_books.html">Study Material</a></li>
+                <!-- <li><input onclick = darkModeON() class="pristine hideOnMObile" type="checkbox" name="toggle" value="on"></li> -->
                 <li onclick = showSlidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
@@ -33,18 +36,17 @@
         <p>GTU BE IT Syllabus for all sem. Here, we provide GTU Syllabus. You are here to download GTU Syllabus. <br> Welcome to the <a href="/index.html" >GtuLibrary</a> site that provide all the Engineering Syllabus. </p><br><br>
     </div>
 
-        <div class="sem-choices-container">
-            <ul>
-                <li onclick = sem_1and2()><a href="#">1 & 2 sem</a></li>
-                <li onclick = sem_3()><a href="#">3 sem</a></li>
-                <li onclick = sem_4()><a href="#">4 sem</a></li>
-                <li onclick = sem_5()><a href="#">5 sem</a></li>
-                <li onclick = sem_6()><a href="#">6 sem</a></li>
-                <li onclick = sem_7()><a href="#">7 sem</a></li>
-            </ul>
-        </div>
-        <br>
-        <br>
+    <div class="sem-choices-container all">
+        <ul>
+            <li onclick = sem_1and2()><a class="sem1_2 choice"   href="#">1 & 2 sem</a></li>
+            <li onclick = sem_3()><a class="sem3 choice" href="#">3 sem</a></li>
+            <li onclick = sem_4()><a class="sem4 choice" href="#">4 sem</a></li>
+            <li  onclick = sem_5()><a class="sem5 choice" href="#">5 sem</a></li>
+            <li onclick = sem_6()><a class="sem6 choice" href="#">6 sem</a></li>
+            <li onclick = sem_7()><a class="sem7 choice" href="#">7 sem</a></li>
+        </ul>
+    </div>
+
 
         <h3>GTU SYLLABUS</h3>
         <br>
@@ -60,61 +62,61 @@
                     <tr>
                         <td class="col1"> 1 </td>
                         <td class="col2"> Mathematics-1 </td>
-                        <td class="col3"><a href="#">Download</a></td>
+                        <td class="col3"><a class="col31" href="#">Download</a></td>
                     </tr>
     
                     <tr>
                         <td class="col1"> 2 </td>
                         <td class="col2"> Mathematics-2 </td>
-                        <td class="col3"><a href="#">Download</a></td>
+                        <td class="col3"><a class="col31" href="#">Download</a></td>
                     </tr>
     
                     <tr>
                         <td class="col1"> 3 </td>
                         <td class="col2"> Programming for Problem Solving  </td>
-                        <td class="col3"><a href="#">Download</a></td>
+                        <td class="col3"><a class="col31" href="#">Download</a></td>
                     </tr>
     
                     <tr>
                         <td class="col1"> 4 </td>
                         <td class="col2"> Physics-2 </td>
-                        <td class="col3"><a href="#">Download</a></td>
+                        <td class="col3"><a class="col31" href="#">Download</a></td>
                     </tr>
     
                     <tr>
                         <td class="col1"> 5 </td>
                         <td class="col2">  Environmental Science </td>
-                        <td class="col3"><a href="#">Download</a></td>                
+                        <td class="col3"><a class="col31" href="#">Download</a></td>                
                     </tr>
     
                     <tr>
                         <td class="col1"> 6 </td>
                         <td class="col2">   Chemistry </td>
-                        <td class="col3"><a href="#">Download</a></td>                
+                        <td class="col3"><a class="col31" href="#">Download</a></td>                
                     </tr>
     
                     <tr>
                         <td class="col1"> 7 </td>
                         <td class="col2"> Basic Civil Engineering </td>
-                        <td class="col3"><a href="#">Download</a></td>                
+                        <td class="col3"><a class="col31" href="#">Download</a></td>                
                     </tr>
     
                     <tr>
                         <td class="col1"> 8 </td>
                         <td class="col2"> Basic Mechanical Engineering </td>
-                        <td class="col3"><a href="#">Download</a></td>                
+                        <td class="col3"><a class="col31" href="#">Download</a></td>                
                     </tr>
     
                     <tr>
                         <td class="col1"> 9 </td>
                         <td class="col2"> Basic Electrical Engineering </td>
-                        <td class="col3"><a href="#">Download</a></td>                
+                        <td class="col3"><a class="col31" href="#">Download</a></td>                
                     </tr>
     
                     <tr>
                         <td class="col1"> 10 </td>
                         <td class="col2"> Engineering & Design </td>
-                        <td class="col3"><a class="col31" href="#">Download</a></td>                
+                        <td class="col3"><a class="col31" class="col31" href="#">Download</a></td>                
                     </tr>
     
                     </tr>

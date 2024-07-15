@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,14 +9,12 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css.css">
 </head>
-
 <body>
-
     <header>
         <nav>
             <ul class="slidebar">
                 <li  onclick = hideSlidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                <li><input onclick = darkModeON() class="pristine hideOnMObile" type="checkbox" name="toggle" value="on"></li>
+                <!-- <li><input onclick = darkModeON() class="pristine hideOnMObile" type="checkbox" name="toggle" value="on"></li> -->
                 <li><a href="/index.html">Home </a></li>
                 <li><a href="/old_paper.html">GTU Old Paper</a></li>
                 <li><a href="/GTU_Syllabus.html">Syllabus</a></li>
@@ -25,17 +22,17 @@
                 </ul>
             <ul class="topbar">
                 <li class="nav-back" onclick = Go_back()><a><i class="fa-solid fa-arrow-left"></i></a></li>
+                <li><img id="logo" src="/photos/logo.png"></li>
                 <li class="hideOnMObile"><a href="/index.html">Home </a></li>
                 <li class="hideOnMObile"><a href="/old_paper.html">GTU Old Paper</a></li>
                 <li class="hideOnMObile"><a href="/GTU_Syllabus.html">Syllabus</a></li>
                 <li class="hideOnMObile"><a href="/GTU_books.html">Study Material</a></li>
-                <li><input onclick = darkModeON() class="pristine hideOnMObile" type="checkbox" name="toggle" value="on"></li>
+                <!-- <li><input onclick = darkModeON() class="pristine hideOnMObile" type="checkbox" name="toggle" value="on"></li> -->
                 <li onclick = showSlidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
     </header>
-
-    <div class="mainContainer">
+    <div class="mainContainer all">
         <h1>
             GTU Old Papers
         </h1><br><br>
@@ -43,7 +40,6 @@
             Here, we provide GTU Old Papers. You are here to download GTU Old Papers For all branch. Welcome to GTUStudy
             the site that provide all the Engineering winter and summer old papers.
         </p><br><br>
-
         <table class="table">
             <tr>
                 <th class="col1">NO.</th>
@@ -53,49 +49,70 @@
             </tr>
             <tr>
                 <td class="col1">1</td>
-                <td class="col2"><a class="col21" href="gtuBranchSemPaper/ComputerSempaper.html">Computer Engineering
-                        Old Papers</a></td>
+                <td class="col2">
+                    <a class="col21" href="gtuBranchSemPaper/ComputerSempaper.html">Computer Engineering
+                        Old Papers
+                    </a>
+                </td>
             </tr>
             <tr>
                 <td class="col1">2</td>
-                <td class="col2"><a class="col21"
-                        href="/gtuBranchSemPaper/InformationTechnologySemPaper.html">Information Technology Old
-                        Papers</a></td>
+                <td class="col2">
+                    <a class="col21"href="/gtuBranchSemPaper/InformationTechnologySemPaper.html">Information Technology Old
+                        Papers
+                    </a>
+                </td>
             </tr>
             <tr>
                 <td class="col1">3</td>
-                <td class="col2"><a class="col21" href="/gtuBranchSemPaper/MechanicalSemPaper.html">Mechanical
-                        Engineering Old Papers</a></td>
+                <td class="col2">
+                    <a class="col21" href="/gtuBranchSemPaper/MechanicalSemPaper.html">Mechanical
+                        Engineering Old Papers
+                    </a>
+                </td>
             </tr>
             <tr>
                 <td class="col1">4</td>
-                <td class="col2"><a class="col21" href="/gtuBranchSemPaper/CivilSemPaper.html"> Civil Engineering Old
-                        Papers</a></td>
+                <td class="col2">
+                    <a class="col21" href="/gtuBranchSemPaper/CivilSemPaper.html"> Civil Engineering Old
+                        Papers
+                    </a>
+                </td>
             </tr>
             <tr>
                 <td class="col1">5</td>
-                <td class="col2"><a class="col21" href="/gtuBranchSemPaper/ElectricalSemPaper.html">Electrical
-                        Engineering Old Papers</a></td>
+                <td class="col2">
+                    <a class="col21" href="/gtuBranchSemPaper/ElectricalSemPaper.html">Electrical
+                        Engineering Old Papers
+                    </a>
+                </td>
             </tr>
             <tr>
                 <td class="col1">6</td>
-                <td class="col2"><a class="col21"
-                        href="/gtuBranchSemPaper/Electronics&CommunicationSemPaper.html">Electronics & Communication Old Papers</a></td>
+                <td class="col2">
+                    <a class="col21"
+                        href="/gtuBranchSemPaper/Electronics&CommunicationSemPaper.html">Electronics & Communication Old Papers
+                    </a>
+                </td>
             </tr>
             <tr>
                 <td class="col1">7</td>
-                <td class="col2"><a class="col21" href="/gtuBranchSemPaper/AutomobileSenPaper.html">Automobile
-                        Engineering Old Papers</a></td>
+                <td class="col2">
+                    <a class="col21" href="/gtuBranchSemPaper/AutomobileSenPaper.html">Automobile
+                        Engineering Old Papers
+                    </a>
+                </td>
             </tr>
             <tr>
                 <td class="col1">8</td>
-                <td class="col2"><a class="col21" href="/gtuBranchSemPaper/ChemicalSemPaper.html">Chemical Engineering
-                        Old Papers</a></td>
+                <td class="col2">
+                    <a class="col21" href="/gtuBranchSemPaper/ChemicalSemPaper.html">Chemical Engineering
+                        Old Papers
+                    </a>
+                </td>
             </tr>
         </table><br><br><br>
-
     </div>
-
     <footer>
         <div class="copyRight">
             <di><b>
@@ -106,9 +123,6 @@
             <div>&#169; Corporate 2024.all rights received </div>
         </div>
     </footer>
-
     <script src="/all.js"></script>
-
 </body>
-
 </html>

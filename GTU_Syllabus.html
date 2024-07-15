@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="/css.css">
 </head>
 <body>
-
     <header>
         <nav class="nav-container">
             <ul class="slidebar">
                 <li  onclick = hideSlidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
-                <li><input onclick = darkModeON() class="pristine hideOnMObile" type="checkbox" name="toggle" value="on"></li>
+                <!-- <li><input onclick = darkModeON() class="pristine hideOnMObile" type="checkbox" name="toggle" value="on"></li> -->
                 <li><a href="/index.html">Home </a></li>
                 <li><a href="/old_paper.html">GTU Old Paper</a></li>
                 <li><a href="/GTU_Syllabus.html">Syllabus</a></li>
@@ -21,6 +20,7 @@
             </ul>
             <ul class="topbar">
                 <li class="nav-back" onclick = Go_back()><a><i class="fa-solid fa-arrow-left"></i></a></li>
+                <li><img id="logo" src="/photos/logo.png"></li>
                 <li class="hideOnMObile"><a href="/index.html"> Home</a></li>
                     <li class="hideOnMObile Menu">
                         <a onmousemove = display_oldpaper_branch() href="#"><pre>GTU  Old Paper  <i class="fa-solid fa-caret-down"></i></pre></a>
@@ -37,13 +37,12 @@
                     </li>
                 <li class="hideOnMObile"><a href="/GTU_Syllabus.html">Syllabus</a></li>
                 <li class="hideOnMObile"><a href="/GTU_books.html">Study Material </a></li>
-                <li><input onclick = darkModeON() class="pristine hideOnMObile" type="checkbox" name="toggle" value="on"></li>
+                <!-- <li><input onclick = darkModeON() class="pristine hideOnMObile" type="checkbox" name="toggle" value="on"></li> -->
                 <li onclick = showSlidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
     </header>
-
-    <div onmousemove = hide_sub_Menu() class="mainContainer">
+    <div onmousemove = hide_sub_Menu() class="mainContainer all">
         <h1>
             GTU Syllabus
         </h1><br><br>
@@ -79,7 +78,7 @@
             <tr>
                 <td class="col1">5</td>
                 <td class="col2">09</td>
-                <td class="col3"><a class="col31" href="/gtuSyllabus/Electronics.html">Electrical Engineering</a></td>
+                <td class="col3"><a class="col31" href="/gtuSyllabus/Electrical Engineering.html">Electrical Engineering</a></td>
             </tr>
             <tr>
                 <td class="col1">6</td>
@@ -89,16 +88,15 @@
             <tr>
                 <td class="col1">7</td>
                 <td class="col2">02</td>
-                <td class="col3"><a class="col31" href="/gtuSyllabus/AutoMobile.html">Automobile Engineering</a></td>
+                <td class="col3"><a class="col31" href="/gtuSyllabus/Automobile Engineering.html">Automobile Engineering</a></td>
             </tr>
             <tr>
                 <td class="col1">8</td>
                 <td class="col2">05</td>
-                <td class="col3"><a class="col31" href="/gtuSyllabus/Chemical.html">Chemical Engineering</a></td>
+                <td class="col3"><a class="col31" href="/gtuSyllabus/Chemical Engineering.html">Chemical Engineering</a></td>
             </tr>
         </table><br><br><br>
     </div>
-
     <footer>
         <div class="copyRight">
             <di><b><h2>Study material</h2></b></di>
@@ -107,8 +105,6 @@
             <div>&#169; Corporate 2024.all rights received </div>
         </div>
     </footer>
-
     <script src="/all.js"></script>
-
 </body>
 </html>

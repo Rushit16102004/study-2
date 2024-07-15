@@ -8,6 +8,11 @@
 body {
     background: linear-gradient(from bottom, #fff8f8 0%, white 100%);
 }
+span {
+    font-size: 2rem;
+    text-align: center;
+    color: rgba(255, 0, 0, 0.079);
+}
 a {
     text-decoration: none;
     color: rgb(0, 0, 0);
@@ -15,22 +20,6 @@ a {
 .mainContainer > p > a {
     text-decoration: underline;
     color: blue;
-}
-
-.dark-mode {
-    background-color: rgb(47, 47, 47);
-    color: white;
-}
-.dark-mode-brings_serveLink {
-    background: linear-gradient(180deg,#272737,#7b7b82,#8b8b8b);
-    color: white;
-}
-.dark-mode-col-BackColor {
-    background-color: rgb(197, 197, 197);
-    color: black;
-}
-.dark-mode-col-11-21 {
-    color: white;
 }
 
 .img {
@@ -56,6 +45,7 @@ a {
 
 h1, h2, h3, h4, h5, h6{
     text-wrap: balance;
+    display: inline-block;
 }
 h1 {
     font-size: 2.2rem;
@@ -65,7 +55,7 @@ h1 {
 }
 h3 {
     font-size: 2.2rem;
-    text-align: center;
+    margin-left: 40%;
 }
 p {
     font-size: 1.3rem;
@@ -79,7 +69,7 @@ nav {
     /* Full width */
     width: 100%;
     /* Height of navigation bar */
-    height: 50px;
+    height: 70px;
     /* Opacity and color of the navigation bar */
     background-color: rgba(22, 46, 131, 0.78);
     /* Shadow of the navigation bar */
@@ -102,6 +92,7 @@ li {
     padding-right: 15px;
 }
 
+/* navbar */
 nav ul {
     width: 100%;
     list-style: none;
@@ -121,10 +112,6 @@ nav a {
     align-items: center;
 }
 
-nav a:hover {
-    background-color: #cacaca;
-    color: black;
-}
 .slidebar {
     font-size: 1.3rem;
     position: fixed;
@@ -143,9 +130,11 @@ nav a:hover {
     display: block; 
     color: #000;
 }
+
 .slidebar li {
     width: 100%;
 }
+
 .slidebar a {
     width: 100%;
 }
@@ -153,15 +142,68 @@ nav a:hover {
 .menu-button {
     display: none;
 }
+
+.hideOnMObile{
+    border-bottom: 5px solid transparent;
+    border-radius: 400px;
+}
+
 .hideOnMObile a{
     color: white;
 }
+
+
+nav .hideOnMObile:hover {
+    border-bottom: 5px solid #001B79;
+    border-radius: 400px;
+}
+
+.Menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.Menu > a {
+    margin: .89rem;
+}
+
+.oldpaper_sub_Menu, .studymaterial_branch_sub_Menu{
+    display: none;
+    flex-direction:column ;
+    color: #000;
+    background-color: rgb(88, 143, 255);
+    width: auto;
+}
+
+.Drop_down_oldpaper, .Drop_down_studymaterial_branch{
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.2rem;
+}
+
+.oldpaper_sub_Menu > li  {
+    width: 100%;
+    margin-left: 15px;
+}
+
+.oldpaper_sub_Menu > li > a:hover{
+    background-color: rgb(66, 115, 213);
+    color: white;
+    border-bottom: 2px solid #001B79;
+    border-radius: 50px;
+} 
+
 .topbar {
     display: flex;
     justify-content: space-between; /* Add this line to distribute the items evenly in the container */
     align-items: center; /* Add this line to vertically center the items */
     padding: 10px 20px; /* Add some padding to make the content look more balanced */
     box-sizing: border-box; /* Add this line to include padding and border in the element's total width and height */
+}
+#logo {
+    height: 60px;
+    width: 150px;
+    mix-blend-mode: multiply;
 }
 @media(max-width: 1000px) {
     .hideOnMObile{
@@ -194,16 +236,20 @@ nav a:hover {
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
-    /* #logo {
+    #logo {
         height: 50px;
         width: 110px;
-    } */
+    }
     .navBarMem{
         font-size: 1.14rem;
     }
 
     #selectOption {
         font-size: 1.14;
+    }
+
+    .serve {
+        padding: 1ex 0ch 0ex 0ch;
     }
 
     .serveLink {
@@ -237,6 +283,10 @@ nav a:hover {
     .img {
         height: 0px;
         margin: 0rem;
+        border-width: 0 10px 13px 10px;
+    }
+    .img2 {
+        border-width: 2.5px;
     }
     .img:hover {
         box-shadow: 0.5rem 0.5rem 30rem rgb(255, 207, 207) ;
@@ -271,13 +321,17 @@ nav a:hover {
     .img {
         height: 75%;
     }
+
+    #inspiring-quotes-container {
+        display: none;
+    }
 }
+/* end navbar */
 
 .mainContainer {
     height: auto;
     width: auto;
     text-align: center;
-    margin-top: 2rem;
 }
 
 .brings {
@@ -301,10 +355,7 @@ nav a:hover {
 
 .serve {
     height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    padding: 2ex 6ch 2ex 6ch;
+    padding: 10px 40px 10px 40px;
 }
 
 .serveLink {
@@ -318,6 +369,9 @@ nav a:hover {
     flex-direction: row;
     border:none;
     border-radius: 40px 0px;
+}
+.serveLink > .links > h3 {
+    margin-left: 0%;
 }
 
 .backImg {
@@ -366,6 +420,9 @@ nav a:hover {
     font-size: 1.01rem;
 }
 
+.copyRight > a {
+    padding-right: 20PX;
+}
 .table{
     width: 50%;
     margin: auto;
@@ -391,15 +448,19 @@ td, th {
     font-weight: bold;
     color: rgb(0, 0, 0);
 }
+
 .col1 {
     padding: 1rem 0.6rem 1rem 0.6rem;
 }
+
 .col2 {
     padding: 1rem 1.1rem 1rem 1.1rem;
 }
+
 .col3 {
     padding: 1rem 2.9rem 1rem 2.9rem;
 }
+
 .col31:hover, .col21:hover, .col11:hover{
     color: blue;
     text-decoration: underline;
@@ -408,9 +469,11 @@ td, th {
 .tableOLD {
     width: 70%;
 }
+
 .colOLD1 {
     padding: 1rem 2rem 1rem 2rem;
 }
+
 .col-BackColor {
     color: white;
     background-color: #2b2b2bba;
@@ -425,6 +488,10 @@ td, th {
     gap: 3rem;
     text-align: center;
 }
+#mainBookBody > h3 {
+    margin-left: 0%;
+}
+
 .booksContainer {
     height: auto;
     width: auto;
@@ -442,12 +509,14 @@ td, th {
     gap: 1rem;
     align-items: center;
 }
+
 .book {
     height: 300px;
     width: 300px;
     background-image: url(/photos/darkphoto1.avif);
     background-size: cover;
 }
+
 .subName {
     width: 400px;    
     text-align: center;
@@ -504,11 +573,13 @@ td, th {
     40%, 100% {
         transform: rotateZ(0);
     }
-}  
+} 
+
 .button:hover {
     background-color: rgba(255, 0, 0, 1);
     transform: scale(1.05);
 }
+
 .button:active {
     box-shadow:
     inset -2px -2px 3px rgba(255, 255, 255, 0.6),
@@ -541,6 +612,7 @@ td, th {
     color: white; 
     padding-bottom: 10px; 
 } 
+
 .sem-choices-container {
     display: flex;
     justify-content: center;
@@ -552,7 +624,9 @@ td, th {
     z-index: 200;
     width: 100%;
     height: auto;
+    margin-bottom: 50px;
 }
+
 .sem-choices-container > ul {
     display: flex;
     flex-direction: row;
@@ -581,41 +655,17 @@ td, th {
     color: black;
 }
 
-.Menu {
-    display: flex;
-    flex-direction: column;
-}
-.Menu > a {
-    margin: .89rem;
-}
-.oldpaper_sub_Menu, .studymaterial_branch_sub_Menu{
-    display: none;
-    flex-direction:column ;
-    color: #000;
-    background-color: rgb(88, 143, 255);
-    width: auto;
-}
-.Drop_down_oldpaper, .Drop_down_studymaterial_branch{
-    display: flex;
-    flex-direction: column;
-    padding-top: 0.2rem;
-}
-
-.oldpaper_sub_Menu > li  {
-    width: 100%;
-    margin-left: 15px;
-}
-.oldpaper_sub_Menu > li > a:hover{
-    background-color: rgb(66, 115, 213);
-    color: white;
-} 
-
-
-/* dark mode button */
+/* dark mode */
+/* dark modebutton */
 input {
     margin-top: 10px;
     font: 20px/1.5 sans-serif;
 }
+
+.slidebar > .dark-button {
+    padding-left: 30px;
+}
+
 input[type=checkbox] {
     --off: #e4e4e4;
     --mid: #829ad6;
@@ -638,6 +688,7 @@ input[type=checkbox] {
     appearance: none;
     -webkit-tap-highlight-color: transparent;
 }
+
 input[type=checkbox]:before {
     animation: handleOff var(--transDur) var(--timing);
     background-attachment: fixed;
@@ -656,19 +707,23 @@ input[type=checkbox]:before {
     width: 1em;
     height: 0.75em;
 }
+
 input[type=checkbox]:checked {
     animation: bgOn var(--transDur) var(--timing) forwards;
 }
+
 input[type=checkbox]:checked:before {
     animation: handleOn var(--transDur) var(--timing) forwards;
 }
+
 input[type=checkbox]:focus {
     outline: none;
 }
+
 input[type=checkbox].pristine, input[type=checkbox].pristine:before {
     animation: none;
 }
-  /* Animations */
+
 @keyframes bgOff {
     from {
         background-color: var(--on);
