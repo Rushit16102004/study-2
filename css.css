@@ -519,14 +519,12 @@ td, th {
 }
 
 .booksContainer {
-    height: auto;
-    width: auto;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 2.5rem;
     flex-wrap: wrap;
-    padding: 2.5rem 0.2rem 2.5rem 0.2rem;
+    padding: 2.5rem 0.2rem;
     background-color: #f4fc9e23;
 }
 .books {
@@ -538,11 +536,11 @@ td, th {
 .book {
     height: 340px;
     width: 280px;
-    background-color: #000000;
+    background-color: #00000007;
 }
 .book > img {
-width: 95%;
-height: 98%;
+    width: 95%;
+    height: 98%;
 }
 
 .subName {
@@ -551,29 +549,17 @@ height: 98%;
     font-size: 1.5rem;
 }
 .button {
-    /* Set border, line-height, padding, and font-size */
     border: 0;
     line-height: 2.5;
     padding: 0 20px;
     font-size: 1rem;
-    /* Center text and set color */
     text-align: center;
     color: #fff;
     text-shadow: 1px 1px 1px #000;
-    /* Add border-radius and background-color */
     border-radius: 10px;
     background-color: #697ef3;
-    /* Use linear-gradient for background-image */
-    background-image: linear-gradient(
-    to top left,
-    rgba(0, 0, 0, 0.2),
-    rgba(0, 0, 0, 0.2) 30%,
-    rgba(0, 0, 0, 0)
-    );
-    /* Add box-shadow with inset and transition properties */
-    box-shadow:
-    inset 2px 2px 3px rgba(170, 149, 255, 0.6),
-    inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+    background-image: linear-gradient(to top left, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(170, 149, 255, 0.6), inset -2px -2px 3px rgba(0, 0, 0, 0.6);
     transition: all 0.3s ease-in-out;
     animation: wiggle 1.5s linear infinite;
     cursor: pointer;
@@ -1035,9 +1021,8 @@ input[type=checkbox].pristine, input[type=checkbox].pristine:before {
     display: flex;
     justify-content:space-around;
     flex-wrap: wrap;
-    background-color: rgba(150, 197, 255, 0.33);
+    background-color: rgba(170, 201, 239, 0.175);
     margin-bottom: 30px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.304);
     margin-top: 35px;
 }
 .review_imfo {
@@ -1050,7 +1035,7 @@ input[type=checkbox].pristine, input[type=checkbox].pristine:before {
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    background: linear-gradient(135deg, #ffe17dd0 0%, #ffae9ad0 100%);
+    background: linear-gradient(135deg, #b9b7f52c 0%, #dadae34d 100%);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -1086,7 +1071,7 @@ input[type=checkbox].pristine, input[type=checkbox].pristine:before {
     position: absolute;
     top: 0;
     left: 20px;
-    color: #ff1f1f;
+    color: #ff1f1faa;
     background-color: rgba(200, 200, 200, 0);
     width: 250px;
     height: 150px;
