@@ -1094,3 +1094,30 @@ textarea {
 .openbtn:hover {
     background-color: #444;
 }
+
+.loading-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    height: 10px; /* Height of the loading bar */
+    background: linear-gradient(90deg, #4caf50, #81c784); /* Gradient effect */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    transform: scaleX(0); /* Initially hidden */
+    transition: transform 0.5s ease; /* Smooth transition */
+    z-index: 1000; /* Ensure it stays on top */
+}
+
+.loading-bar.active {
+    transform: scaleX(1); /* Show the loading bar */
+    animation: loading 2s infinite; /* Animation effect */
+}
+
+@keyframes loading {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}

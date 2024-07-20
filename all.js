@@ -83,20 +83,6 @@ document.addEventListener("click",e => {
     tar.removeAttribute("class");
 });
 
-//dark mode//
-// function darkModeON() {
-//     const elementsToToggle = [
-//         '.all', 'body', 'h1', '.brings', '.serveLink', '.col-BackColor', 
-//         '.col11', '.col21', '.col1', 'pre', '.col2', '.col31'
-//     ];
-
-//     elementsToToggle.forEach(selector => {
-//         document.querySelectorAll(selector).forEach(element => {
-//             element.classList.toggle('dark-mode');
-//         });
-//     });
-// }
-
 // error ppage
 const resultsBox = document.querySelector(".result-box");
 const inputBox = document.getElementById("input-box");
@@ -165,3 +151,22 @@ function toggleSidebar() {
         sidebar.style.width = "250px";
     }
 }
+
+function showLoading() {
+    const loadingBar = document.getElementById('loading-bar');
+    loadingBar.style.transform = 'scaleX(1)';
+    setTimeout(() => {
+        loadingBar.style.transform = 'scaleX(0)';
+    }, 5000);
+}
+
+// network.js
+window.addEventListener('online', function() {
+    console.log('Network connection is back online');
+    document.getElementById('error-message').style.display = 'none'; // Hide error message when online
+});
+
+window.addEventListener('offline', function() {
+    console.log('Network connection is lost');
+    document.getElementById('error-message').style.display = 'block'; // Show error message when offline
+});

@@ -12,7 +12,7 @@
 <body>
     <header>
         <nav>
-            <ul class="slidebar">
+            <ul class="slidebar" onclick="showLoading(event)">
                 <li  onclick = hideSlidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <!-- <li><input onclick = darkModeON() class="pristine hideOnMObile" type="checkbox" name="toggle" value="on"></li> -->
                 <li><a href="/index.html">Home </a></li>
@@ -20,7 +20,7 @@
                 <li><a href="/GTU_Syllabus.html">Syllabus</a></li>
                 <li><a href="/GTU_books.html">Study Material</a></li>
                 </ul>
-            <ul class="topbar">
+            <ul class="topbar" onclick="showLoading(event)">
                 <li class="nav-back" onclick = Go_back()><a><i class="fa-solid fa-arrow-left"></i></a></li>
                 <li><img id="logo" src="/photos/logo.png"></li>
                 <li class="hideOnMObile"><a href="/index.html">Home </a></li>
@@ -38,53 +38,57 @@
             Here, we provide GTU Old Papers. You are here to download GTU Old Papers For all branch. Welcome to GTUStudy
             the site that provide all the Engineering winter and summer old papers.
         </p><br><br>
-        <class="table">
+        <table class="table">
             <thade>
                 <tr>
                     <th class="col1">NO.</th>
                     <th class="col2">GTU Branch</th>
                 </tr>
             </thade>
-            <tr>
-                <td class="col1">1</td>
-                <td class="col2"><a class="col21" href="gtuBranchSemPaper/ComputerSempaper.html">Computer Engineering Old Papers</a></td>
-            </tr>
-            <tr>
-                <td class="col1">2</td>
-                <td class="col2"><a class="col21" href="/gtuBranchSemPaper/InformationTechnologySemPaper.html">Information Technology Old Papers</a></td>
-            </tr>
-            <tr>
-                <td class="col1">3</td>
-                <td class="col2"><a class="col21" href="/gtuBranchSemPaper/MechanicalSemPaper.html">Mechanical Engineering Old Papers</a></td>
-            </tr>
-            <tr>
-                <td class="col1">4</td>
-                <td class="col2"><a class="col21" href="/gtuBranchSemPaper/CivilSemPaper.html">Civil Engineering Old Papers</a></td>
-            </tr>
-            <tr>
-                <td class="col1">5</td>
-                <td class="col2"><a class="col21" href="/gtuBranchSemPaper/ElectricalSemPaper.html">Electrical Engineering Old Papers</a></td>
-            </tr>
-            <tr>
-                <td class="col1">6</td>
-                <td class="col2"><a class="col21" href="/gtuBranchSemPaper/Electronics&CommunicationSemPaper.html">Electronics & Communication Old Papers</a></td>
-            </tr>
-            <tr>
-                <td class="col1">7</td>
-                <td class="col2"><a class="col21" href="/gtuBranchSemPaper/AutomobileSenPaper.html">Automobile Engineering Old Papers</a></td>
-            </tr>
-            <tr>
-                <td class="col1">8</td>
-                <td class="col2"><a class="col21" href="/gtuBranchSemPaper/ChemicalSemPaper.html">Chemical Engineering Old Papers</a></td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td class="col1">1</td>
+                    <td class="col2"><a class="col21" href="gtuBranchSemPaper/ComputerSempaper.html">Computer Engineering Old Papers</a></td>
+                </tr>
+                <tr>
+                    <td class="col1">2</td>
+                    <td class="col2"><a class="col21" href="/gtuBranchSemPaper/InformationTechnologySemPaper.html">Information Technology Old Papers</a></td>
+                </tr>
+                <tr>
+                    <td class="col1">3</td>
+                    <td class="col2"><a class="col21" href="/gtuBranchSemPaper/MechanicalSemPaper.html">Mechanical Engineering Old Papers</a></td>
+                </tr>
+                <tr>
+                    <td class="col1">4</td>
+                    <td class="col2"><a class="col21" href="/gtuBranchSemPaper/CivilSemPaper.html">Civil Engineering Old Papers</a></td>
+                </tr>
+                <tr>
+                    <td class="col1">5</td>
+                    <td class="col2"><a class="col21" href="/gtuBranchSemPaper/ElectricalSemPaper.html">Electrical Engineering Old Papers</a></td>
+                </tr>
+                <tr>
+                    <td class="col1">6</td>
+                    <td class="col2"><a class="col21" href="/gtuBranchSemPaper/Electronics&CommunicationSemPaper.html">Electronics & Communication Old Papers</a></td>
+                </tr>
+                <tr>
+                    <td class="col1">7</td>
+                    <td class="col2"><a class="col21" href="/gtuBranchSemPaper/AutomobileSenPaper.html">Automobile Engineering Old Papers</a></td>
+                </tr>
+                <tr>
+                    <td class="col1">8</td>
+                    <td class="col2"><a class="col21" href="/gtuBranchSemPaper/ChemicalSemPaper.html">Chemical Engineering Old Papers</a></td>
+                </tr>
+            </tbody>
         </table><br><br><br>
     </div>
     <div id="socialSidebar" class="sidebar">
         <a href="javascript:void(0)" class="closebtn" onclick="toggleSidebar()">&times;</a>
-        <a href="https://www.facebook.com" target="_blank">Facebook</a>
-        <a href="https://www.twitter.com" target="_blank">Twitter</a>
-        <a href="https://www.instagram.com" target="_blank">Instagram</a>
-        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        <div class="social-links">
+            <a href="https://www.facebook.com" target="_blank" class="social-link">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank" class="social-link">Twitter</a>
+            <a href="https://www.instagram.com" target="_blank" class="social-link">Instagram</a>
+            <a href="https://www.linkedin.com" target="_blank" class="social-link">LinkedIn</a>
+        </div>
     </div>
     <button class="openbtn" onclick="toggleSidebar()">☰</button>
     <footer>

@@ -9,21 +9,21 @@
 </head>
 <body>
   <section>
-    <div class="container">
+    <div class="container" id="error-message" class="error-message">
       <div class="text">
-        <h1>Page Not Found</h1>
-        <p>We can't seem to find the page you're looking for. Please check the URL for any typos.</p>
+        <h1>Error 400: Bad Request</h1>
+        <p>Oops! It seems like there's a problem with your request. Please check the URL for any errors.</p>
         <div class="input-box">
             <input type="text" id="input-box" placeholder="Search..." autocomplete="off">
         </div>
           <div class="result-box"></div>
           <ul class="menu">
-            <li><a href="/">Go to Homepage</a></li>
-            <li><a href="#">Visit our Blog</a></li>
-            <li><a href="#">Contact support</a></li>
+            <li><a href="/index.html" onclick="showLoading">Return to Homepage</a></li>
+            <li><a href="#">Explore our Blog</a></li>
+            <li><a href="#">Reach out to Support</a></li>
           </ul>
         </div>
-        <div><img class="image" src="https://omjsblog.files.wordpress.com/2023/07/errorimg.png" alt=""></div>
+        <div><img class="image" src="https://omjsblog.files.wordpress.com/2023/07/errorimg.png" alt="Error Image"></div>
       </div>
     </div>
   </section>
