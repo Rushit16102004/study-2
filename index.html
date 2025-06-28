@@ -45,19 +45,19 @@
         <span>R^2</span>
         </header>
         <div onmousemove="hide_sub_Menu()" class="mainContainer">
-            <h1>GTU Library Brings For You</h1>
+            <h1 class="fade-in">GTU Library Brings For You</h1>
             <div class="brings">
-                <div class="bringsLink"><a href="/GTU_books.html"><img class="img img2" src="/photos/STUDY-CARD.jpg"></a>
+                <div class="bringsLink fade-in"><a href="/GTU_books.html"><img class="img img2" src="/photos/STUDY-CARD.jpg"></a>
                     <div class="size">
                         GTU Study Material
                     </div>
                 </div>
-                <div class="bringsLink"><a href="/GTU_Syllabus.html"><img class="img img2" src="/photos/SYLB-CARD.jpg"></a>
+                <div class="bringsLink fade-in"><a href="/GTU_Syllabus.html"><img class="img img2" src="/photos/SYLB-CARD.jpg"></a>
                     <div class="size">
                         GTU Syllabus
                     </div>
                 </div>
-                <div class="bringsLink"><a href="/old_paper.html"><img class="img img2" src="/photos/OPAPER-CARD.jpg"></a>
+                <div class="bringsLink fade-in"><a href="/old_paper.html"><img class="img img2" src="/photos/OPAPER-CARD.jpg"></a>
                     <div class="size">
                         GTU Old Paper
                     </div>
@@ -65,7 +65,7 @@
             </div>
 
             <!-- review-container -->
-            <div id="review-container">
+            <div id="review-container" class="fade-in">
                 <div class="review_imfo">
                     <div class="img_and_imfo">
                         <img class="review_img" src="/photos/users.png">
@@ -95,11 +95,11 @@
                 </div>
             </div><br>
 
-            <h1>
+            <h1 class="fade-in">
                 GTU Library Serve For This Branches
             </h1>
             <div class="serve">
-                <div class="serveLink">
+                <div class="serveLink slide-in">
                     <div class="backImg"><img class="img" src="/photos/comp.jpg" alt="Computer Engineering"></div>
                     <div class="links">
                         <h3>07 - Computer Engineering</h3>
@@ -109,7 +109,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="serveLink">
+                <div class="serveLink slide-in">
                     <div class="backImg"><img class="img" src="/photos/IT-CARD.jpg" alt="Information Technology"></div>
                     <div class="links">
                         <h3>16 - Information Technology</h3>
@@ -119,7 +119,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="serveLink">
+                <div class="serveLink slide-in">
                     <div class="backImg"><img class="img" src="/photos/MECH-CARD.jpg" alt="Mechanical Engineering"></div>
                     <div class="links">
                         <h3>19 - Mechanical Engineering</h3>
@@ -129,7 +129,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="serveLink">
+                <div class="serveLink slide-in">
                     <div class="backImg"><img class="img" src="/photos/CIVIL-CARD.jpg" alt="Civil Engineering"></div>
                     <div class="links">
                         <h3>06 - Civil Engineering</h3>
@@ -139,7 +139,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="serveLink">
+                <div class="serveLink slide-in">
                     <div class="backImg"><img class="img" src="/photos/ELE-CARD.jpg" alt="Electrical Engineering"></div>
                     <div class="links">
                         <h3>09 - Electrical Engineering</h3>
@@ -149,7 +149,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="serveLink">
+                <div class="serveLink slide-in">
                     <div class="backImg"><img class="img" src="/photos/EC-CARD.jpg" alt="Electronics & Communication Engineering"></div>
                     <div class="links">
                         <h3>10 - Electronics & Communication Engineering</h3>
@@ -159,7 +159,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="serveLink">
+                <div class="serveLink slide-in">
                     <div class="backImg"><img class="img" src="/photos/AUTO-CARD.jpg" alt="Automobile Engineering"></div>
                     <div class="links">
                         <h3>02 – Automobile Engineering</h3>
@@ -169,7 +169,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="serveLink">
+                <div class="serveLink slide-in">
                     <div class="backImg"><img class="img" src="/photos/CHEM-CARD.jpg" alt="Chemical Engineering"></div>
                     <div class="links">
                         <h3>05 - Chemical Engineering</h3>
@@ -193,13 +193,18 @@
             <div class="geek2">***********************************************************************************************************************************************</div>
         </marquee>
         
-        <!-- review area -->
-        <div class="review-box">
-            <h2>Leave a Review</h2>
-            <textarea id="reviewInput" placeholder="Type your review here..."></textarea>
-            <button id="Review-button" onclick="submitReview()">Submit Review</button>
-            <p id="responseMessage"></p>
-        </div>
+                <!-- review area -->
+                <div class="container">
+                    <button id="toggle-button">Toggle Slide</button>
+                    <div class="sliding-container" id="sliding-container">
+                        <div class="review-box">
+                            <h2>Leave a Review</h2>
+                            <textarea id="reviewInput" placeholder="Type your review here..."></textarea>
+                            <button id="Review-button" onclick="submitReview()">Submit Review</button>
+                            <p id="responseMessage"></p>
+                        </div>
+                    </div>
+                </div>
         <div class="social-media-links">
             <a href="https://www.facebook.com" target="_blank" class="social-link facebook">
                 <i class="fa fa-facebook"></i> Facebook
@@ -236,5 +241,6 @@
         </footer>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="/all.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

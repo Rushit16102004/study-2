@@ -160,13 +160,12 @@ function showLoading() {
     }, 5000);
 }
 
-// network.js
 window.addEventListener('online', function() {
     console.log('Network connection is back online');
-    document.getElementById('error-message').style.display = 'none'; // Hide error message when online
+    document.getElementById('error-message').style.display = 'none';
 });
 
 window.addEventListener('offline', function() {
     console.log('Network connection is lost');
-    document.getElementById('error-message').style.display = 'block'; // Show error message when offline
+    document.getElementById('error-message').style.display = 'block';
 });
